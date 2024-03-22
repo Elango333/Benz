@@ -1,0 +1,8083 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  width:100%;
+  
+}
+/* header starts */
+.topheading{
+  background-color: #0C0000;
+  width: 100%;
+  height: 73px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  position: fixed;
+}
+
+
+#logo{
+  margin-left: 39%;
+  width: 5%;
+  height: 5%;
+ 
+}
+
+
+#languageselect{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+ 
+  margin-left: 2%;
+  width: 30%;
+  height: 30%;
+}
+#languageheader{
+  
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+}
+#selectheader{
+  padding-right: 15%;
+}
+#searchbox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  width: 10%;
+  height: 30%;
+}
+@font-face{
+  font-family: 'Lato';
+  src: url(fonts/Lato-Regular.ttf);
+}
+@font-face{
+  font-family: 'Coporate';
+  src: url(fonts/Corporate-A-Regular.otf);
+}
+.commonfont1{
+  color: rgb(144, 140, 140);
+  font-family: 'Lato';
+  font-size: 13px;
+  display: none;
+}
+#language1{
+  width: 47%;
+  border-right: 1px solid rgb(154, 148, 148);
+  height: 60%;
+ 
+}
+#language2{
+  width: 50%;
+  text-align: center;
+  color: white;
+ 
+}
+#search{
+  width: 50%;
+}
+#login{
+  width: 50%;
+}
+
+.commonfont1:hover{
+  color: white;
+  transition: 1s;
+  cursor: pointer;
+}
+.topheading:hover{
+  .commonfont1{
+    display: block;
+   
+  }
+}
+.fa-magnifying-glass{
+  margin-top: 30%;
+}
+/* header ends */
+
+
+/* menubar starts */
+.menulist{
+  margin-top: 70px;
+  list-style-type: none;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  
+  
+}
+#menubar{
+  width: 40%;
+  height: 65px;
+  display: flex;
+   flex-wrap: nowrap;
+   align-items: center;
+   justify-content: space-between;
+  
+}
+.commonfont3{
+  font-family: 'Lato';
+  font-size: 15px;
+  color: white;
+  display: none;
+}
+
+.commonfont3:hover{
+  cursor: pointer;
+    color: grey;
+    transition: 0.8s;
+}
+
+.menulist:hover{
+  
+  background-color: rgba(0, 0, 0,0.7);
+  .commonfont3{
+    display: block;
+    
+  }
+}
+/* menubar ends */
+
+/* responsive for header and menubar starts */
+
+ /* responsive for header and menubar ends */
+
+
+ #landingpage-redcar{
+  background-image: url("images/Landingpage/Firstpic-landingpage.jpg");
+  background-size: 100% 100%;
+  height: 100vh;
+ }
+ 
+ 
+#slider-1{
+  height: 40vh;
+  display: grid;
+	place-items: center;
+}
+.slider{
+	
+	height: 250px;
+	margin: auto;
+	position: relative;
+	width: 100%;
+	display: grid;
+	place-items: center;
+	overflow: hidden;
+	
+}
+
+
+
+.slide-track{
+	
+	display: flex;
+	width: calc(250px * 18);
+	animation: scroll 40s linear infinite;
+	
+}
+
+
+.slide-track:hover{
+  cursor: pointer;
+	animation-play-state: paused;
+  
+}
+
+
+@keyframes scroll{
+	
+	0%{
+		transform: translateX(0);
+	}
+	100%{
+		transform: translateX(calc(-250px * 9));
+	}
+}
+
+.slide{
+  background-color: white;
+	height: 200px;
+	width: 250px;
+	display: flex;
+	align-items: center;
+	padding: 15px;
+	perspective: 100px;
+	
+}
+
+img{
+	width: 100%;
+	transition: transform 1s;
+	
+}
+
+
+img:hover{
+	transform: translateZ(20px);
+ 
+}
+
+
+
+ #landingpage-redcar2{
+  background-image: url("images/Landingpage/Secondpic-landingpage.jpg");
+  background-size: 100% 100%;
+  height: 100vh;
+ 
+ }
+
+ #redcar1-font{
+  padding-top: 20%;
+  padding-left: 4.5%;
+  font-family: 'Coporate';
+  font-size: 55px;
+  color: white;
+ 
+ }
+ #discover1{
+   
+  margin-top: 1.5%;
+  margin-left: 4.3%;
+  width: 6%;
+  height: 5%;
+  background-color: rgba(0, 0, 0, 0.01);
+  border: 1px solid white;
+  border-radius: 25px;
+  font-family:'slatepro';
+  letter-spacing: 0.5px;
+  font-size: 0.9vw;
+  color: white;
+  padding-top: 0.2%;
+  cursor: pointer;
+ }
+
+#discover1:hover{
+   background-color: #dfecf1;
+  
+  color: black;
+}
+
+ #discover2{
+  margin-top: 1.5%;
+  margin-left: 6%;
+  width: 6%;
+  height: 5%;
+  border-radius: 25px;
+   background-color: rgba(0, 0, 0, 0.01);
+  border: 1px solid white;
+  font-family:'slatepro';
+  letter-spacing: 0.5px;
+  font-size: 1vw;
+  color: white;
+  padding-top: 0.2%;
+  cursor: pointer;
+ }
+#discover2:hover{
+   background-color: #dfecf1;
+  
+  color: black;
+}
+#discover:hover{
+  background-color: #dfecf1;
+  
+  color: black;
+}
+
+
+ #redcar2-font{
+  
+ padding-top: 20.5%;
+ padding-left: 6%;
+  font-family: 'Coporate';
+  font-size: 55px;
+  color: white;
+ }
+
+
+ 
+
+
+
+ #whitearea{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 280vh;
+ }
+ #row1-car{
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  
+  width: 75%;
+  height:24%;
+ 
+ }
+ #row1-car1{
+  width:40%;
+  height: 100%;
+ 
+ }
+ #row1-car2{
+  width:50%;
+  height: 100%;
+  
+ }
+ @font-face{
+  font-family:'slatepro';
+  src: url(fonts/SlatePro-Condensed.ttf);
+ }
+ .row1-car-font1{
+  font-family:'slatepro';
+  font-size: 20px;
+  letter-spacing: 0.5px;
+ }
+ .row1-car-font2{
+  margin-top: 4%;
+  font-family: 'Coporate';
+  font-size: 45px;
+  letter-spacing: 0.5px;
+ }
+ #row1-car-image1{
+  margin-top: 3%;
+  width: 100%;
+  height:85%;
+ }
+ #row1-car-image2{
+  margin-top: 11%;
+  width: 100%;
+  height:69%;
+ }
+ #row2-car{
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  margin-top: 15%;
+  width: 75%;
+  height:19%;
+  
+ }
+ #row2-car1{
+  width:40%;
+  height: 100%;
+ 
+ }
+ #row2-car2{
+  width:50%;
+  height: 100%;
+ 
+ }
+ .row2-car-font1{
+  font-family:'slatepro';
+  font-size: 20px;
+  letter-spacing: 0.5px;
+ }
+ .row2-car-font2{
+  margin-top: 4%;
+  font-family: 'Coporate';
+  font-size: 45px;
+  letter-spacing: 0.5px;
+ }
+ #row2-car-image1{
+  margin-top: 3%;
+  width: 100%;
+  height:81%;
+ }
+ #row2-car-image2{
+  margin-top: 11%;
+  width: 100%;
+  height:69%;
+ }
+
+#row3-car{
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  margin-top: 15%;
+  width: 30%;
+  height:24%;
+ 
+ }
+ #row3-car1{
+  width:100%;
+  height: 120%;
+  
+ }
+ .row3-car-font1{
+  font-family:'slatepro';
+  font-size: 20px;
+  letter-spacing: 0.5px;
+ }
+ .row3-car-font2{
+  margin-top: 4%;
+  font-family: 'Coporate';
+  font-size: 45px;
+  letter-spacing: 0.5px;
+ }
+ #row3-car-image1{
+  
+  margin-top: 3%;
+  width: 100%;
+  height:78%;
+ }
+ #row1-car-image1:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 0 5px skyblue, 0 0 15px skyblue, 0 0 25px skyblue, 0 0 50px skyblue, 0 0 100px skyblue;
+ }
+ #row1-car-image2:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 0 5px rgb(48, 106, 130), 0 0 15px rgb(48, 106, 130), 0 0 25px rgb(48, 106, 130), 0 0 50px rgb(48, 106, 130), 0 0 100px rgb(48, 106, 130);
+ }
+ #row2-car-image1:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 0 5px lightgreen, 0 0 15px lightgreen, 0 0 25px lightgreen, 0 0 50px lightgreen, 0 0 100px lightgreen;
+ }
+ #row2-car-image2:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 0 5px skyblue, 0 0 15px skyblue, 0 0 25px skyblue, 0 0 50px skyblue, 0 0 100px skyblue;
+ }
+ #row3-car-image1:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 0 5px rgb(84, 84, 170), 0 0 15px  rgb(84, 84, 170), 0 0 25px  rgb(84, 84, 170), 0 0 50px  rgb(84, 84, 170), 0 0 100px  rgb(84, 84, 170);
+ }
+
+ 
+
+
+ #bluecar{
+width: 100%;
+height: 90vh;
+background-image: url(Landingpage/Eigthpic-landingpage.jpg);
+background-size: 100% 100%;
+ }
+ #bluecar-font1{
+  padding-top: 6%;
+  padding-left: 6%;
+  font-family:'slatepro';
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  color: white;
+ }
+ #bluecar-font2{
+  padding-left: 6%;
+  font-family: 'Coporate';
+  font-size: 65px;
+  letter-spacing: 0.5px;
+  color: white;
+ }
+ #discover{
+  margin-top: 2.5%;
+  margin-left: 6%;
+  width: 6%;
+  height: 5%;
+  border-radius: 25px;
+  font-family:'slatepro';
+  letter-spacing: 0.5px;
+  font-size: 1vw;
+  
+   background-color: rgba(0, 0, 0, 0.01);
+  border: 1px solid white;
+  padding-top: 0.2%;
+  cursor: pointer;
+ }
+
+#theorypart{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wholedivtheory{
+  width: 85%;
+  height: 90%;
+ 
+
+}
+.theorydetails-font{
+  padding-top: 2%;
+  color: rgb(144, 140, 140);
+  font-family: 'Lato';
+  font-size: 13px;
+}
+#theorydetails{
+  margin-top: 5%;
+}
+
+ #socialmedia{
+  width: 100%;
+  height: 45vh;
+  
+ }
+ #socialmediafont{
+  padding-top: 6.6%;
+  font-family: 'Coporate';
+  font-size: 65px;
+  text-align: center;
+ }
+ #socialmediaicons{
+  margin: auto;
+  margin-top: 3%;
+  width:40%;
+  height: 20%;
+  
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+ }
+ .commonicon{
+  font-size: 35px;
+ }
+
+ .commonicon:hover{
+  transform: scale(1.2);
+ }
+ #otherdetails{
+  width: 100%;
+  height: 60vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+ }
+ #wholedetails{
+  
+  width: 85%;
+  height: 26%;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+ #legalnotice{
+  width:50%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+ .legalfont{
+  color: rgb(144, 140, 140);
+  font-family: 'Lato';
+  font-size: 13px;
+ }
+ #languagefooter{
+  
+  width:8%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+}
+.commonfont5{
+  color: rgb(144, 140, 140);
+  font-family: 'Lato';
+  font-size: 13px;
+ 
+}
+#language1{
+  width: 47%;
+  border-right: 1px solid rgb(154, 148, 148);
+  height: 60%;
+ 
+}
+#language2{
+  width: 50%;
+  text-align: center;
+  color: white;
+}
+.legalfont:hover{
+  color: white;
+  transition: 1s;
+  cursor: pointer;
+}
+.commonfont5:hover{
+  color: white;
+  transition: 1s;
+  cursor: pointer;
+}
+#biglogo{
+  
+  align-self: center;
+  width:6%;
+  height: 18%;
+}
+#lastname{
+  
+  font-family: 'Coporate';
+  font-size: 43px;
+  text-align: center;
+  color: white;
+}
+#topgo{
+  margin-bottom: 2%;
+  margin-top: 5%;
+  color:white;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
+
+a{
+  text-decoration: none;
+}
+#carvideo{
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+}
+video{
+  
+  margin-top: 3.8%;
+  width: 100%;
+  height: 90%;
+}
+#artbrief1{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  
+}
+#artwholecontainer1{
+  margin-top: 5%;
+  width: 80%;
+  height: 80%;
+  
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.artsmallcontainer1{
+  width:45.5%;
+  height: 100%;
+  
+ 
+}
+#artpic1{
+  width: 100%;
+  height: 60%;
+}
+.artfont1{
+  font-family: 'Coporate';
+  font-size: 60px;
+  color: white;
+}
+.artfont2{
+  margin-top: 2%;
+  font-family: 'Lato';
+  font-size: 25px;
+  color: white;
+}
+.discover3{
+  margin-top: 6%;
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+  width: 20%;
+  height: 5%;
+  border-radius: 25px;
+  font-family:'slatepro';
+  letter-spacing: 0.5px;
+  font-size: 20px;
+  border: 1px solid white;
+  padding-top: 1%;
+  cursor: pointer;
+ }
+ #sanfranscar{
+  width: 100%;
+  height: 100vh;
+ }
+ #sanscar{
+  width: 100%;
+  height: 100%;
+ }
+ #artbrief2{
+  width: 100%;
+  height: 110vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+ }
+ #artsmallcontainer2{
+  margin-top: 5%;
+  width:50%;
+  height: 80%;
+  
+
+ }
+ .artfont3{
+  margin-top: 2%;
+  font-family: 'Lato';
+  font-size: 18px;
+  color: white;
+ }
+ .discover4{
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+  margin-top: 4%;
+  width: 20%;
+  height: 5%;
+  border-radius: 25px;
+  font-family:'slatepro';
+  letter-spacing: 0.5px;
+  font-size: 20px;
+  border: 1px solid white;
+  padding-top: 1%;
+  cursor: pointer;
+ }
+ .discover3:hover{
+ box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+ }
+
+ .discover4:hover{
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+  }
+
+ #artpic2{
+  width:100%;
+  height: 60%;
+ }
+ .artfont4{
+  margin-top: 1.5%;
+  font-family: 'Coporate';
+  font-size: 60px;
+  color: white;
+}
+#artbrief3{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  
+}
+#artbrief4{
+  width: 100%;
+  height: 100vh;
+  background-image: url(/Art-culture/Eleventhpic-artculture.jpg);
+  background-size: 100% 100%;
+}
+#artfont5{
+  padding-top: 5%;
+  padding-left: 8%;
+  font-family: 'Coporate';
+  font-size: 110px;
+  color: white;
+}
+#sustainabilitybrief1{
+  width: 100%;
+  height: 100vh;
+  background-image: url(/images/sustainability/sustainabilitypic1.jpg);
+  background-size: 100% 100%;
+}
+#commonfont6{
+  padding-top: 10%;
+  padding-left: 7%;
+  font-family: 'Coporate';
+  font-size: 68px;
+  color: white;
+}
+#commonfont7{
+  padding-top: 2.2%;
+  padding-left: 7%;
+  font-family: 'Lato';
+  font-size: 18px;
+  color: white;
+}
+#sustainabilitybrief2{
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+
+}
+#sustainabilitybrief3{
+  margin-top: 13%;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/images/sustainability/sustainabilitypic4.jpg);
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+#sustainabilitybrief4{
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+
+}
+#sustainabilitybrief5{
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+
+}
+#sustainabilitybrief6{
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+
+}
+#sustainabilitybrief7{
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+
+}
+.susbox1{
+  margin-top: 13%;
+  align-self: center;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.susminibox1{
+  width: 32%;
+  height: 100%;
+
+}
+.susminibox2{
+  width: 65%;
+  height: 100%;
+background-image: url(/images/sustainability/sustainabilitypic2.jpg);
+background-size: 100% 100%;
+}
+
+.susminibox5{
+  width: 65%;
+  height: 100%;
+background-image: url(/images/sustainability/sustainabilitypic6.jpg);
+background-size: 100% 100%;
+}
+
+.susminibox8{
+  width: 65%;
+  height: 100%;
+background-image: url(/images/sustainability/sustainabilitypic8.jpg);
+background-size: 100% 100%;
+}
+
+.commonfont8{
+  margin-top: 13%;
+  font-family: 'Coporate';
+  font-size: 68px;
+  
+}
+.commonfont9{
+  margin-top: 14%;
+  font-family: 'Lato';
+  font-size: 23px;
+}
+.suspic1{
+  width: 100%;
+  height: 100%;
+ 
+ 
+}
+
+.suspic3{
+  width: 100%;
+  height: 100%;
+
+}
+.susminibox3{
+  width: 65%;
+  height: 100%;
+ background-image: url(/images/sustainability/sustainabilitypic5.jpg);
+ background-size: 100% 100%;
+
+}
+.susminibox7{
+  width: 65%;
+  height: 100%;
+ background-image: url(/images/sustainability/sustainabilitypic7.jpg);
+ background-size: 100% 100%;
+
+}
+.susminibox4{
+  width: 32%;
+  height: 100%;
+
+}
+#designcar1{
+  width: 100%;
+  height: 110vh;
+  background-image: url(/images/Design/firstpic-design.jpg);
+  background-size: 100% 100%;
+}
+#commonfont10{
+  padding: 8%;
+  font-family: 'Coporate';
+  font-size: 70px;
+  color: white;
+}
+#designbrief1{
+  width: 100%;
+  height: 66vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+.designmainbox1{
+  margin-top: 6% ;
+  
+  width: 75%;
+  height: 65%;
+  display: flex;
+  justify-content: space-between;
+}
+.designsubbox1{
+  width: 56%;
+  height: 100%;
+  
+  background-image: url(/images/Design/secondpic-design.jpg);
+  background-size: 100% 100%;
+}
+.designsubbox2{
+  width: 30%;
+  height: 100%;
+  
+}
+.commonfont11{
+  font-family: 'Lato';
+  font-size: 23px;
+  margin-top: 20%;
+}
+#designbrief2{
+  width: 100%;
+  height: 66vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+.designsubbox4{
+  width: 56%;
+  height: 100%;
+ 
+  background-image: url(/images/Design/thirdpic-design.jpg);
+  background-size: 100% 100%;
+}
+.designsubbox3{
+  width: 30%;
+  height: 100%;
+  
+}
+.commonfont12{
+  font-family: 'Lato';
+  font-size: 23px;
+  margin-top: 20%;
+  color: white;
+}
+#designbrief3{
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+#commonfont13{
+  padding-top: 14%;
+  padding-right: 30%;
+  padding-left: 5%;
+  font-family: 'Coporate';
+  font-size: 85px;
+  Color: black;
+}
+#designbrief4{
+  width: 100%;
+  height: 66vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+.designsubbox5{
+  width: 56%;
+  height: 100%;
+    background-image: url(/images/Design/fourthpic-design.jpg);
+  background-size: 100% 100%;
+}
+#designbrief5{
+  width: 100%;
+  height: 110vh;
+  background-color: black;
+}
+#commonfont14{
+  padding: 5%;
+  text-align: center;
+  font-family: 'Coporate';
+  font-size: 100px;
+  Color: white;
+}
+#designbrief6{
+  width:100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+#designmainbox2{
+  width: 90%;
+  height: 80%;
+ 
+  display: flex;
+}
+.designsubbox6{
+  width: 33.3%;
+  height: 100%;
+ 
+}
+.designsubbox7{
+  width: 100%;
+  height: 50%;
+ 
+}
+
+
+.smallpic1{
+  background-image: url(/images/Design/fifthpic-design.jpeg);
+  background-size: 100% 100%;
+}
+.smallpic2{
+  background-image: url(/images/Design/sixthpic-design.jpg);
+  background-size: 100% 100%;
+}
+.smallpic3{
+  background-image: url(/images/Design/seventhpic-design.jpg);
+  background-size: 100% 100%;
+}
+.smallpic4{
+  background-image: url(/images/Design/eigthpic-design.jpg);
+  background-size: 100% 100%;
+}
+#designbrief7{
+  width:100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+#designmainbox3{
+  width: 90%;
+  height: 80%;
+  display: flex;
+}
+.designsubbox8{
+  width: 33.3%;
+  height: 100%;
+ }
+.designsubbox9{
+  width: 100%;
+  height: 50%;
+}
+.smallpic5{
+  background-image: url(/images/Design/ninthpic-design.jpg);
+  background-size: 100% 100%;
+}
+.smallpic6{
+  background-image: url(/images/Design/tenthpic-design.jpg);
+  background-size: 100% 100%;
+}
+.smallpic7{
+  background-image: url(/images/Design/eleventhpic-design.jpg);
+  background-size: 100% 100%;
+}
+.smallpic8{
+  background-image: url(/images/Design/tewlvethpic-design.jpg);
+  background-size: 100% 100%;
+}
+.smallpic9{
+  background-image: url(/images/Design/thirteenthpic-design.jpg);
+  background-size: 100% 100%;
+}
+.smallpic10{
+  background-image: url(/images/Design/fourteenthpic-design.jpg);
+  background-size: 100% 100%;
+}
+
+
+#designbrief8{
+  width: 100%;
+  height: 130vh;
+  background-color: white;
+}
+
+.smallpic1:hover{
+  transform: scale(1.1);
+}
+.smallpic2:hover{
+  transform: scale(1.1);
+}
+.smallpic3:hover{
+  transform: scale(1.1);
+}
+.smallpic4:hover{
+  transform: scale(1.1);
+}
+.smallpic5:hover{
+  transform: scale(1.1);
+}
+.smallpic6:hover{
+  transform: scale(1.1);
+}
+.smallpic7:hover{
+  transform: scale(1.1);
+}
+.smallpic8:hover{
+  transform: scale(1.1);
+}
+.smallpic9:hover{
+  transform: scale(1.1);
+}
+.smallpic10:hover{
+  transform: scale(1.1);
+}
+#commonfont15{
+  padding: 10%;
+
+  font-family: 'Coporate';
+  font-size: 78px;
+  color: black;
+}
+#innovationbrief1{
+  width: 100%;
+  height: 100vh;
+  background-image: url(/images/Innovation/innovationpic1.jpg);
+  background-size: 100% 100%;
+}
+#commonfont16{
+  padding-top: 8%;
+  padding-left: 8%;
+  font-family: 'Coporate';
+  font-size: 78px;
+  color: white;
+}
+#innovationbrief2{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+@font-face {
+  font-family: 'malvery';
+  src: url(/fonts/MalveryOutline-6YKBg.otf);
+}
+#commonfont17{
+ 
+  padding-top: 8%;
+  font-family: 'malvery';
+  font-size: 400px;
+  color: white;
+  text-align: center;
+  position:relative;
+  float: clear;
+  
+}
+#commonfont18{
+  margin-bottom: -10%;
+  padding-left: 60%;
+  font-family: 'Coporate';
+  font-size: 100px;
+  color: white;
+  text-align: center;
+  position: absolute;
+  
+ 
+}
+#innovationbrief3{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+#innovationvideo-1{
+  width: 100%;
+  height: 90%;
+}
+#innovationbrief4{
+  width: 100%;
+  height: 130vh;
+  background-color: black;
+}
+#commonfont19{
+  padding-top: 5%;
+  padding-left:8%;
+  font-family: 'Coporate';
+  font-size: 75px;
+  color: white;
+}
+#innovationbrief5{
+  width:100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#innovationbigbox1{
+  width:85%;
+  height: 80%;
+  
+  display: flex;
+  justify-content: space-between;
+}
+#innovationsmallbox1{
+  width:40%;
+  height: 100%;
+  
+}
+#innovationsmallbox2{
+  width:53%;
+  height: 100%;
+ 
+  background-image: url(/images/Innovation/innovationpic2.jpg);
+  background-size: 100% 100%;
+}
+#commonfont20{
+  font-family: 'Lato';
+  font-size: 25px;
+  margin-top: 27%;
+  color: white;
+}
+#innovationbrief6{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+}
+#lightbox{
+  width: 80%;
+  height: 70%;
+ 
+margin-top: 5%;
+margin-left: 10%;
+position: relative;
+display: inline-block;
+}
+#commonfont21{
+  font-family: 'malvery';
+  font-size: 515px;
+  color: white;
+  text-align: center;
+
+}
+#innovationdigital{
+  margin-top: 30%;
+  margin-left: 25%;;
+  width: 50%;
+  height: 30%;
+  
+  display: inline-block;
+  position: absolute;
+}
+#commonfont22{
+  font-family: 'Coporate';
+  font-size: 235px;
+  font-weight: bolder;
+  color: white;
+}
+#innovationbrief7{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+#innovationvideo-2{
+  width: 100%;
+  height: 90%;
+}
+#innovationbrief8{
+  width: 100%;
+  height: 120vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#innovationbigbox2{
+width: 90%;
+height: 75%;
+
+display: flex;
+}
+.innovationsmallbox3{
+  width:50%;
+  height: 100%;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/images/Innovation/innovationpic3.jpg);
+  background-size: 100% 100%;
+}
+.innovationsmallbox4{
+  width:50%;
+  height: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/images/Innovation/innovationpic4.jpg);
+  background-size: 100% 100%;
+}
+#innovationsmallbox5{
+  width: 70%;
+  height: 70%;
+  
+  background-image: url(/images/Innovation/innovationpic5.jpg);
+  background-size: 100% 100%;
+}
+#commonfont23{
+  font-family: 'Lato';
+  font-size: 23px;
+  margin-top: 47%;
+  text-align: center;
+  color: white;
+  
+}
+#innovationbrief9{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+#commonfont24{
+  padding-top: 8%;
+  font-family: 'malvery';
+  font-size: 415px;
+  color: white;
+  text-align: center;
+}
+#innovationbrief10{
+  width:100%;
+  height: 100vh;
+  background-image: url(/images/Innovation/innovationpic6.jpg);
+  background-size: 100% 100%;
+}
+#innovationbrief11{
+  width:100%;
+  height: 100vh;
+  background-image: url(/images/Innovation/innovationpic7.jpg);
+  background-size: 100% 100%;
+}
+#commonfont25{
+  padding-top:12%;
+  padding-left: 8%;
+  font-family: 'Coporate';
+  font-size: 105px;
+ 
+  color: white;
+}
+#innovationbrief12{
+  width: 100%;
+  height: 100vh;
+  background-image: url(/images/Innovation/innovationpic8.jpg);
+  background-size: 100% 100%;
+}
+#exclusivebrief1{
+  width:100%;
+  height: 100vh;
+  background-image: url(/images/Exclusive/exclusivepic1-1.jpg);
+  background-size: 100% 100%;
+}
+
+
+/* Exclusive */
+
+#commonfont26{
+  padding-top:1.5%;
+  padding-left: 8%;
+  font-family: 'Lato';
+  font-size: 21px;
+  color: white;
+}
+
+#exclusivebrief2{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+#commonfont27{
+  padding-top: 12%;
+  font-family: 'Coporate';
+  font-size: 125px;
+  text-align: center;
+  color: white;
+}
+
+#commonfont28{
+  padding-top:3%;
+  font-family: 'Lato';
+  font-size: 25px;
+  text-align: center;
+  color: white;
+}
+.exclusivebrief3{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+.exclusivemainbox1{
+  width:90%;
+  height: 85%;
+justify-content: space-between;
+display: flex;
+}
+#exclusiveminibox1{
+  width: 34%;
+  height: 100%;
+  
+}
+#exclusiveminibox2{
+  background-image: url(/images/Exclusive/exclusivepic2.jpg);
+  background-size: 100% 100%;
+  width: 66%;
+  height: 100%;
+  
+}
+.commonfont29{
+  font-family: 'Coporate';
+  font-size: 80px;
+  
+  color: white;
+}
+.commonfont30{
+  padding-top: 10%;
+  font-family: 'Lato';
+  font-size: 23px;
+  padding-bottom: 10%;
+  color: white;
+}
+.commonfont31{
+  font-family: 'Lato';
+  font-size: 23px;
+  line-height: 33px;
+  color: white;
+}
+#exclusiveminibox4{
+  width: 34%;
+  height: 100%;
+  
+}
+#exclusiveminibox3{
+  background-image: url(/images/Exclusive/exclusivepic3.jpg);
+  background-size: 100% 100%;
+  width: 63%;
+  height: 100%;
+  
+}
+#exclusivebrief4{
+  width:100%;
+  height: 100vh;
+  background-image: url(/images/Exclusive/exclusivepic4.jpg);
+  background-size: 100% 100%;
+}
+#commonfont32{
+  font-family: 'Coporate';
+  font-size: 110px;
+  padding-top: 5%;
+  padding-left: 5%;
+  color: white;
+}
+
+#vehiclelist{
+ width: 100%;
+ height: 140vh;
+
+}
+#commonfont33{
+  padding-top: 4%;
+  font-family: 'Coporate';
+  font-size: 70px;
+}
+#cartype{
+  margin-top: 2.5%;
+width: 100%;
+height: 5%;
+justify-content: space-between;
+display: flex;
+}
+.carname{
+  width: 18%;
+  height:100%;
+  
+  display: flex;
+}
+.caricon{
+  width: 30%;
+  height:100%;
+ 
+}
+.carnametype{
+  width: 70%;
+  height:100%;
+  
+}
+.icon1{
+  
+  background-image: url(/images/caricons/caricon1-removebg-preview.png);
+  background-size: 100% 100%;
+}
+.icon2{
+  background-image: url(/images/caricons/caricon2.png);
+  background-size: 100% 100%;
+}
+.icon3{
+  margin-top: 5%;
+  background-image: url(/images/caricons/caricon3-removebg-preview.png);
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+}
+.icon4{
+  background-image: url(/images/caricons/caricon4.png);
+  background-size: 100% 100%;
+}
+.icon5{
+  background-image: url(/images/caricons/caricon5.png);
+  background-size: 100% 100%;
+}
+.commonfont34{
+  padding-top: 6%;
+  padding-left: 4%;
+  font-family: 'Lato';
+  font-size: 1.5vw;
+  color: black;
+}
+.type1car:hover{
+  background-color: skyblue;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.type2car:hover{
+  background-color: skyblue;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.type3car:hover{
+  background-color: skyblue;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.type4car:hover{
+  background-color: skyblue;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.type5car:hover{
+  background-color: skyblue;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#cartype1brief{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+}
+#carbriefwhole{
+  width: 70%;
+  height: 82.5%;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.cardetails{
+  width: 30%;
+  height: 43%;
+  
+  box-shadow: 10px 10px 20px  black;
+  border-radius: 5px;
+}
+.commonfont35{
+  margin-top: 12%;
+  font-family: 'Coporate';
+  font-size: 30px;
+  color: black;
+  text-align: center;
+}
+.commonfont36{
+  font-family: 'Lato';
+  font-size: 18px;
+  text-align: center;
+  margin-top: 3%;
+}
+#carvideo2{
+  width: 100%;
+  height: 100%;
+}
+#carvideo2-1{
+  width: 100%;
+  height: 80%;
+}
+
+.cardetails:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+
+
+#cartype2brief{
+  width: 100%;
+  height: 140vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+}
+#carbriefwhole2{
+  width: 70%;
+  height: 90%;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.cardetails2{
+  width: 30%;
+  height: 28%;
+  
+  box-shadow: 10px 10px 20px  black;
+  border-radius: 5px;
+}
+.commonfont35{
+  margin-top: 12%;
+  font-family: 'Coporate';
+  font-size: 30px;
+  color: black;
+  text-align: center;
+}
+.commonfont36{
+  font-family: 'Lato';
+  font-size: 18px;
+  text-align: center;
+  margin-top: 3%;
+}
+.cardetails2:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+#cartype3brief{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+ 
+}
+.cardetails3{
+  width: 21%;
+  height: 72%;
+  
+  box-shadow: 10px 10px 20px  black;
+  border-radius: 5px;
+}
+.cardetails3:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+#cartype4brief{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+ 
+}
+#carbriefwhole3{
+  width: 50%;
+  height: 77%;
+  display: flex;
+  justify-content: space-between;
+  
+ 
+}
+.cardetails4{
+  width: 42%;
+  height: 90%;
+  
+  box-shadow: 10px 10px 20px  black;
+  border-radius: 5px;
+}
+.cardetails4:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+
+
+.vehicle1-details1{
+  width:100%;
+  height: 100vh;
+  background-image: url(/images/vehiclesdetails/vehicle-1/vehicle1-eqs-1.jpg);
+  background-size: 100% 100%;
+}
+.vehicle-learnmore{
+  margin-top: 7%;
+  margin-left: 10%;
+  width: 9%;
+  height: 7%;
+  background-color: rgb(85, 85, 162);
+  color: white;
+  border: 1px solid rgb(85, 85, 162);
+  font-family: 'Lato';
+  font-size: 20px;
+}
+
+.vehicle-learnmore:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: rgb(52, 52, 149);
+}
+
+.vehicle1-text1{
+  font-family: 'Coporate';
+  font-size: 60px;
+  color: white;
+  padding-top: 30%;
+  padding-left: 10%;
+}
+.vehicle1-text2{
+  font-family: 'Lato';
+  font-size: 20px;
+  color: skyblue;
+  padding-top: 1%;
+  padding-left: 10%;
+}
+.vehicle1-details2{
+  width: 100%;
+  height: 40vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+.vehicle1box-1{
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 60%;
+  height: 40%;
+ 
+display: flex;
+}
+.vehicle1box-2{
+  width:25%;
+  height: 100%;
+ 
+}
+.vehicle1box-3{
+  
+  width:50%;
+  height: 100%;
+ 
+  
+}
+.vehicle1-text3{
+  font-family: 'Lato';
+  font-size: 18px;
+  color: white;
+}
+.vehicle1-text4{
+  padding-top: 3%;
+  font-family: 'Coporate';
+  font-size: 38px;
+  color: white;
+}
+.vehicle1-text6{
+  padding-top: 5.5%;
+  font-family: 'Coporate';
+  font-size: 38px;
+  color: white;
+}
+.vehicle1-text5{
+  padding-top:6%;
+  font-family: 'Lato';
+  font-size: 14px;
+  color: white;
+}
+.vehicle1-text13{
+  padding-top:2.5%;
+  font-family: 'Lato';
+  font-size: 14px;
+  color: white;
+}
+.vehicle1-text7{
+  padding-top:3%;
+  font-family: 'Lato';
+  font-size: 14px;
+  color: white;
+}
+.vehicle1-text8{
+  margin-top: 1%;
+  margin-left: 5%;
+  font-family: 'Lato';
+  font-size: 14px;
+  color: gray;
+}
+.vehicle1-details3{
+  width: 100%;
+  height: 110vh;
+
+}
+.vehicle1-text9{
+  padding-top: 3%;
+  padding-left: 9%;
+  font-family: 'Coporate';
+  font-size: 50px;
+  color: black;
+}
+.vehicle1-exteriordetails{
+  width: 100%;
+  height: 150vh;
+}
+.vehicle1-text10{
+  padding-top: 8%;
+  padding-left: 9%;
+  font-family: 'Lato';
+  font-size: 16px;
+  color: gray;
+}
+.vehicle1-text11{
+  padding-left: 9%;
+  padding-top: 1.5%;
+  font-family: 'Coporate';
+  font-size: 50px;
+  color: black;
+}
+.vehicle1-text12{
+  padding-top: 1.5%;
+  padding-left: 9%;
+  font-family: 'Lato';
+  font-size: 16px;
+  color: gray;
+}
+.vehicle1-exteriorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-1/vehicle1-eqs2.jpg);
+ background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle1-interiorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-1/vehicle1-eqs3.jpg);
+ background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle1-equipmentpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-1/vehicle1-eqs4.jpg);
+ background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+
+
+.vehicle2-details1{
+  width:100%;
+  height: 100vh;
+  background-image: url(/images/vehiclesdetails/vehicle-2/vehicle2-aclass1.jpg);
+  background-size: 100% 100%;
+}
+.vehicle2-text1{
+  font-family: 'Coporate';
+  font-size: 60px;
+  color: white;
+  padding-top: 10%;
+  padding-left: 6%;
+}
+.vehicle2-text2{
+  font-family: 'Lato';
+  font-size: 20px;
+  color: black;
+  padding-top: 1%;
+  padding-left: 6%;
+}
+
+.vehicle2-exteriorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-2/vehicle2-aclass2.jpg);
+ background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle2-interiorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-2/vehicle2-aclass3.jpg);
+ background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle2-equipmentpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-2/vehicle2-aclass4.jpg);
+ background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+.vehicle3-details1{
+  width:100%;
+  height: 100vh;
+  background-image: url(/images/vehiclesdetails/vehicle-3/vehicle3-cclass1.jpg);
+  background-size: 100% 100%;
+}
+
+.vehicle3-text2{
+  font-family: 'Lato';
+  font-size: 20px;
+  color: white;
+  padding-top: 1%;
+  padding-left: 6%;
+}
+.vehicle3-exteriorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-3/vehicle3-cclass2.jpg);
+ background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle3-interiorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-3/vehicle3-cclass3.jpg);
+ background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle3-equipmentpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-3/vehicle3-cclass4.jpg);
+ background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+
+
+.vehicle4-details1{
+  width:100%;
+  height: 100vh;
+  background-image: url(/images/vehiclesdetails/vehicle-4/vehicle4-eclass1.jpg);
+  background-size: 100% 100%;
+}
+
+.vehicle4-exteriorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-4/vehicle4-eclass2.jpg);
+ background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle4-interiorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-4/vehicle4-eclass3.jpg);
+ background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle4-equipmentpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-4/vehicle4-eclass4.jpg);
+ background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+
+
+.vehicle5-details1{
+  width:100%;
+  height: 100vh;
+  background-image: url(/images/vehiclesdetails/vehicle-5/vehicle5-sclass1.jpg);
+  background-size: 100% 100%;
+}
+
+.vehicle5-exteriorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-5/vehicle5-sclass2.jpg);
+ background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle5-interiorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-5/vehicle5-sclass3.jpg);
+ background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle5-equipmentpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-5/vehicle5-sclass4.jpg);
+ background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+
+
+.vehicle6-details1{
+  width:100%;
+  height: 100vh;
+  background-image: url(/images/vehiclesdetails/vehicle-6/vehicle6-maybach1.jpg);
+  background-size: 100% 100%;
+}
+
+.vehicle6-text1{
+  font-family: 'Coporate';
+  font-size: 60px;
+  color: black;
+  padding-top: 10%;
+  padding-left: 5%;
+}
+.vehicle6-text2{
+  font-family: 'Lato';
+  font-size: 20px;
+  color: black;
+  padding-top: 1%;
+  padding-left: 5%;
+}
+
+.vehicle6-exteriorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-6/vehicle6-maybach2.jpg);
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle6-interiorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-6/vehicle6-maybach3.jpg);
+ background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle6-equipmentpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-6/vehicle6-maybach4.jpg);
+ background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+.vehicle7-details1{
+  width:100%;
+  height: 100vh;
+  background-image: url(/images/vehiclesdetails/vehicle-7/vehicle7-eqb1.jpg);
+  background-size: 100% 100%;
+}
+
+.vehicle7-exteriorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-7/vehicle7-eqb2.jpg);
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle7-interiorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-7/vehicle7-eqb3.jpg);
+ background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle7-equipmentpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-7/vehicle7-eqb3.jpg);
+ background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle8-details1{
+  width:100%;
+  height: 100vh;
+  background-image: url(/images/vehiclesdetails/vehicle-8/vehicle8-gla1.jpg);
+  background-size: 100% 100%;
+}
+
+.vehicle8-exteriorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-8/vehicle8-gla2.jpg);
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle8-interiorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-8/vehicle8-gla3.jpg);
+ background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle8-equipmentpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-8/vehicle8-gla4.jpg);
+ background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+
+
+
+.vehicle9-details1{
+  width:100%;
+  height: 100vh;
+  background-image: url(/images/vehiclesdetails/vehicle-9/vehicle9-glb1_1.jpg);
+  background-size: 100% 100%;
+}
+
+.vehicle9-exteriorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-9/vehicle9-glb2_1.jpg);
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle9-interiorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-9/vehicle9-glb3.jpg);
+ background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle9-equipmentpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-9/vehicle9-glb4.jpg);
+ 
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+.vehicle10-details1{
+  width:100%;
+  height: 100vh;
+  background-image: url(/images/vehiclesdetails/vehicle-10/ezgif.com-gif-maker.jpg);
+  background-size: 100% 100%;
+}
+
+.vehicle10-exteriorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-10/ezgif.com-gif-maker\ \(1\).jpg);
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle10-interiorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-10/ezgif.com-gif-maker\ \(2\).jpg);
+ background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle10-equipmentpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-10/ezgif.com-gif-maker\ \(3\).jpg);
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+
+
+
+.vehicle11-details1{
+  width:100%;
+  height: 100vh;
+  background-image: url(/images/vehiclesdetails/vehicle-11/ezgif.com-gif-maker.jpg);
+  background-size: 100% 100%;
+}
+
+.vehicle11-exteriorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-11/ezgif.com-gif-maker\ \(1\).jpg);
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle11-interiorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-11/ezgif.com-gif-maker\ \(2\).jpg);
+ background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle11-equipmentpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-11/ezgif.com-gif-maker\ \(3\).jpg);
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+.vehicle12-details1{
+  width:100%;
+  height: 100vh;
+  background-image: url(/images/vehiclesdetails/vehicle-12/ezgif.com-gif-maker.jpg);
+  background-size: 100% 100%;
+}
+
+.vehicle12-exteriorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-12/ezgif.com-gif-maker\ \(2\).jpg);
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle12-interiorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-12/ezgif.com-gif-maker\ \(3\).jpg);
+ background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle12-equipmentpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-12/ezgif.com-gif-maker\ \(4\).jpg);
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle12-text1{
+  font-family: 'Coporate';
+  font-size: 60px;
+  color: white;
+  padding-top: 42%;
+  padding-left:62%;
+}
+.vehicle12-text2{
+  font-family: 'Lato';
+  font-size: 20px;
+  color: white;
+  padding-top: 1%;
+  padding-left: 62%;
+}
+
+
+
+
+
+.vehicle13-details1{
+  width:100%;
+  height: 100vh;
+  background-image: url(/images/vehiclesdetails/vehicle-13/ezgif.com-gif-maker.jpg);
+  background-size: 100% 100%;
+}
+
+.vehicle13-exteriorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-13/ezgif.com-gif-maker\ \(1\).jpg);
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle13-interiorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-13/ezgif.com-gif-maker\ \(2\).jpg);
+ background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle13-equipmentpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-13/ezgif.com-gif-maker\ \(3\).jpg);
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+.vehicle14-details1{
+  width:100%;
+  height: 100vh;
+  background-image: url(/images/vehiclesdetails/vehicle-14/ezgif.com-gif-maker.jpg);
+  background-size: 100% 100%;
+}
+
+.vehicle14-exteriorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-14/ezgif.com-gif-maker\ \(1\).jpg);
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle14-interiorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-14/ezgif.com-gif-maker\ \(2\).jpg);
+ background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle14-equipmentpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-14/ezgif.com-gif-maker\ \(3\).jpg);
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+.vehicle15-details1{
+  width:100%;
+  height: 100vh;
+  background-image: url(/images/vehiclesdetails/vehicle-15/ezgif.com-gif-maker.jpg);
+  background-size: 100% 100%;
+}
+
+.vehicle15-exteriorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-15/ezgif.com-gif-maker\ \(1\).jpg);
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle15-interiorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-15/ezgif.com-gif-maker\ \(2\).jpg);
+ background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle15-equipmentpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-15/ezgif.com-gif-maker\ \(3\).jpg);
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+.vehicle16-details1{
+  width:100%;
+  height: 100vh;
+  background-image: url(/images/vehiclesdetails/vehicle-16/ezgif.com-gif-maker.jpg);
+  background-size: 100% 100%;
+}
+
+.vehicle16-exteriorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-16/ezgif.com-gif-maker\ \(1\).jpg);
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle16-interiorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-16/ezgif.com-gif-maker\ \(2\).jpg);
+ background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle16-equipmentpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-16/ezgif.com-gif-maker\ \(3\).jpg);
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+.vehicle17-details1{
+  width:100%;
+  height: 100vh;
+  background-image: url(/images/vehiclesdetails/vehicle-17/ezgif.com-gif-maker.jpg);
+  background-size: 100% 100%;
+}
+
+.vehicle17-exteriorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-17/ezgif.com-gif-maker\ \(1\).jpg);
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle17-interiorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-17/ezgif.com-gif-maker\ \(2\).jpg);
+ background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle17-equipmentpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-17/ezgif.com-gif-maker\ \(3\).jpg);
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+.vehicle18-details1{
+  width:100%;
+  height: 100vh;
+  background-image: url(/images/vehiclesdetails/vehicle-18/ezgif.com-gif-maker.jpg);
+  background-size: 100% 100%;
+}
+
+.vehicle18-exteriorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-18/ezgif.com-gif-maker\ \(1\).jpg);
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle18-interiorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-18/ezgif.com-gif-maker\ \(2\).jpg);
+ background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle18-equipmentpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-18/ezgif.com-gif-maker\ \(3\).jpg);
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+.vehicle19-details1{
+  width:100%;
+  height: 100vh;
+  background-image: url(/images/vehiclesdetails/vehicle-19/ezgif.com-gif-maker.jpg);
+  background-size: 100% 100%;
+}
+
+.vehicle19-exteriorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-19/ezgif.com-gif-maker\ \(1\).jpg);
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle19-interiorpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-19/ezgif.com-gif-maker\ \(2\).jpg);
+ background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle19-equipmentpic{
+  margin-top: 5%;
+  margin-left: 9%;
+  width: 83%;
+  height: 80%;
+  background-image: url(/images/vehiclesdetails/vehicle-19/ezgif.com-gif-maker\ \(3\).jpg);
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.vehicle19-text1{
+  font-family: 'Coporate';
+  font-size: 60px;
+  color: black;
+  padding-top: 25%;
+  padding-left: 5%;
+}
+.vehicle19-text2{
+  font-family: 'Lato';
+  font-size: 20px;
+  color: black;
+  padding-top: 1%;
+  padding-left: 5%;
+}
+
+
+
+
+@media (max-width:1000px) {
+  .topheading{
+    background-color: #0C0000;
+    width: 100%;
+    height: 73px;
+   
+    
+    
+    position: relative;
+    position: fixed;
+  }
+  
+  #logo{
+   
+   
+    width: 55px;
+    height: 50px;
+  }
+#logohref{
+  margin-left: -36%;
+}
+
+  #languageselect{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 2%;
+    width: 40%;
+    height: 20%;
+  }
+  #languageheader{
+    
+    width: 150%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  
+  }
+  #selectheader{
+    padding-right: 7%;
+  }
+  #searchbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    width: 15%;
+    height: 30%;
+  }
+  @font-face{
+    font-family: 'Lato';
+    src: url(fonts/Lato-Regular.ttf);
+  }
+  @font-face{
+    font-family: 'Coporate';
+    src: url(fonts/Corporate-A-Regular.otf);
+  }
+  .commonfont1{
+    padding-bottom: 10%;
+    color: rgb(144, 140, 140);
+    font-family: 'Lato';
+    font-size: 2vw;
+    display: none;
+  }
+  #language1{
+    width: 47%;
+    border-right: 1px solid rgb(154, 148, 148);
+    height: 60%;
+   
+  }
+  #language2{
+    width: 50%;
+    text-align: center;
+    color: white;
+   
+  }
+  #search{
+    width: 50%;
+  }
+  #login{
+    width: 50%;
+  }
+  
+  .commonfont1:hover{
+    color: white;
+    transition: 1s;
+    cursor: pointer;
+  }
+  .topheading:hover{
+    .commonfont1{
+      display: block;
+     
+    }
+  }
+  .fa-magnifying-glass{
+    margin-top: 20%;
+    display: none;
+  }
+
+  .menulist{
+    margin-top: 70px;
+    list-style-type: none;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    
+    
+  }
+  #menubar{
+    width: 80%;
+    height: 65px;
+    display: flex;
+     flex-wrap: nowrap;
+     align-items: center;
+     justify-content: space-between;
+    
+  }
+  .commonfont3{
+    font-family: 'Lato';
+    font-size: 2vw;
+    color: white;
+    display: none;
+  }
+  
+  .commonfont3:hover{
+    cursor: pointer;
+      color: grey;
+      transition: 0.8s;
+  }
+  
+  .menulist:hover{
+    
+    background-color: rgba(0, 0, 0,0.7);
+    .commonfont3{
+      display: block;
+      
+    }
+  }
+  #landingpage-redcar{
+    background-image: url("images/Landingpage/Firstpic-landingpage.jpg");
+    background-size: 100% 100%;
+    height: 40vh;
+   }
+
+   #landingpage-redcar2{
+    background-image: url("images/Landingpage/Secondpic-landingpage.jpg");
+    background-size: 100% 100%;
+    height: 37vh;
+   
+   }
+  
+   #redcar1-font{
+    padding-top: 22%;
+    padding-left: 5%;
+    font-family: 'Coporate';
+    font-size: 4vw;
+    color: white;
+   
+   }
+   #discover1{
+    margin-top: 4.5%;
+    margin-left: 5%;
+    width: 18%;
+    height: 7%;
+  
+    border: 1px solid white;
+     background-color: rgba(0, 0, 0, 0.01);
+    border-radius: 25px;
+    font-family:'slatepro';
+    letter-spacing: 0.5px;
+    font-size:2.5vw;
+    
+    padding-top: 0.8%;
+    cursor: pointer;
+   }
+  
+  #discover1:hover{
+   background-color: #dfecf1;
+  
+  color: black;
+}
+  
+   #discover2{
+    margin-top: 4.5%;
+    margin-left: 5%;
+    width: 18%;
+    height: 7.5%;
+    border-radius: 25px;
+   
+    font-family:'slatepro';
+    letter-spacing: 0.5px;
+    font-size: 2.5vw;
+      background-color: rgba(0, 0, 0, 0.01);
+    border: 1px solid white;
+    padding-top: 0.8%;
+    cursor: pointer;
+   }
+  #discover2:hover{
+   background-color: #dfecf1;
+  
+  color: black;
+}
+  
+ #discover:hover{
+   background-color: #dfecf1;
+  
+  color: black;
+}
+  
+  
+   #redcar2-font{
+    
+   padding-top: 10%;
+   padding-left: 5%;
+    font-family: 'Coporate';
+    font-size: 4vw;
+    color: white;
+   }
+
+  #slider-1{
+  height: 30vh;
+  display: grid;
+	place-items: center;
+    margin-bottom:5%;
+}
+.slider{
+	
+	height: 250px;
+	margin: auto;
+	position: relative;
+	width: 100%;
+	display: grid;
+	place-items: center;
+	overflow: hidden;
+	
+}
+
+
+
+.slide-track{
+	
+	display: flex;
+	width: calc(250px * 18);
+	animation: scroll 40s linear infinite;
+	
+}
+
+
+.slide-track:hover{
+  cursor: pointer;
+	animation-play-state: paused;
+  
+}
+
+
+@keyframes scroll{
+	
+	0%{
+		transform: translateX(0);
+	}
+	100%{
+		transform: translateX(calc(-250px * 9));
+	}
+}
+
+.slide{
+  background-color: white;
+	height: 200px;
+	width: 250px;
+	display: flex;
+	align-items: center;
+	padding: 15px;
+	perspective: 100px;
+	
+}
+
+img{
+	width: 100%;
+	transition: transform 1s;
+	
+}
+
+
+img:hover{
+	transform: translateZ(20px);
+ 
+}
+
+
+  #whitearea{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 280vh;
+ }
+ #row1-car{
+  display: flex;
+   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  width: 100%;
+  height:35%;
+ 
+ }
+ #row1-car1{
+   
+  width:100%;
+  height: 45%;
+ 
+ }
+ #row1-car2{
+  margin-top: 10%;
+  width:100%;
+  height: 70%;
+  
+ }
+ @font-face{
+  font-family:'slatepro';
+  src: url(fonts/SlatePro-Condensed.ttf);
+ }
+ .row1-car-font1{
+  padding-top: 7%;
+   text-align: center;
+  font-family:'slatepro';
+  font-size: 3vw;
+  letter-spacing: 0.5px;
+ }
+ .row1-car-font2{
+   text-align: center;
+  margin-top: 4%;
+  font-family: 'Coporate';
+  font-size: 4.5vw;
+  letter-spacing: 0.5px;
+ }
+ #row1-car-image1{
+  margin-top: 10%;
+  width: 100%;
+  height:70%;
+ }
+ #row1-car-image2{
+  margin-top: 11%;
+  width: 100%;
+  height:70%;
+ }
+ #row2-car{
+  margin-top: 20%;
+  display: flex;
+   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  width: 100%;
+  height:35%;
+ 
+ }
+ #row2-car1{
+  width:100%;
+  height: 60%;
+ 
+ }
+ #row2-car2{
+  width:100%;
+  height: 50%;
+ 
+ }
+ .row2-car-font1{
+   text-align: center;
+  font-family:'slatepro';
+  font-size: 3vw;
+  letter-spacing: 0.5px;
+ }
+ .row2-car-font2{
+   text-align: center;
+  margin-top: 4%;
+  font-family: 'Coporate';
+  font-size: 4.5vw;
+  letter-spacing: 0.5px;
+ }
+ #row2-car-image1{
+  margin-top: 10%;
+  width: 100%;
+  height:60%;
+ }
+ #row2-car-image2{
+  margin-top: 11%;
+  width: 100%;
+  height:60%;
+ }
+
+#row3-car{
+  
+  width: 100%;
+  height:16%;
+ 
+ }
+ #row3-car1{
+  margin-bottom: 15%;
+  width:100%;
+  height: 100%;
+ }
+ .row3-car-font1{
+   text-align: center;
+  font-family:'slatepro';
+  font-size: 3vw;
+  
+  letter-spacing: 0.5px;
+ }
+ .row3-car-font2{
+   text-align: center;
+  margin-top: 4%;
+  font-family: 'Coporate';
+  font-size: 4.5vw;
+  letter-spacing: 0.5px;
+ }
+ #row3-car-image1{
+  
+  margin-top: 10%;
+  width: 100%;
+  height:75%;
+ }
+ #row1-car-image1:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 0 5px skyblue, 0 0 15px skyblue, 0 0 25px skyblue, 0 0 50px skyblue, 0 0 100px skyblue;
+ }
+ #row1-car-image2:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 0 5px rgb(48, 106, 130), 0 0 15px rgb(48, 106, 130), 0 0 25px rgb(48, 106, 130), 0 0 50px rgb(48, 106, 130), 0 0 100px rgb(48, 106, 130);
+ }
+ #row2-car-image1:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 0 5px lightgreen, 0 0 15px lightgreen, 0 0 25px lightgreen, 0 0 50px lightgreen, 0 0 100px lightgreen;
+ }
+ #row2-car-image2:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 0 5px skyblue, 0 0 15px skyblue, 0 0 25px skyblue, 0 0 50px skyblue, 0 0 100px skyblue;
+ }
+ #row3-car-image1:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 0 5px rgb(84, 84, 170), 0 0 15px  rgb(84, 84, 170), 0 0 25px  rgb(84, 84, 170), 0 0 50px  rgb(84, 84, 170), 0 0 100px  rgb(84, 84, 170);
+ }
+
+
+ #bluecar{
+width: 100%;
+height: 40vh;
+background-image: url(Landingpage/Eigthpic-landingpage.jpg);
+background-size: 100% 100%;
+ }
+ #bluecar-font1{
+  padding-top: 6%;
+  padding-left: 6%;
+  font-family:'slatepro';
+  font-size: 1.7vw;
+  letter-spacing: 0.5px;
+  color: white;
+ }
+ #bluecar-font2{
+  padding-left: 6%;
+  font-family: 'Coporate';
+  font-size: 5.7vw;
+  letter-spacing: 0.5px;
+  color: white;
+ }
+ #discover{
+  margin-top: 2.5%;
+  margin-left: 6%;
+   width: 18%;
+    height: 7%;
+  border-radius: 25px;
+  font-family:'slatepro';
+  letter-spacing: 0.5px;
+  font-size: 2.5vw;
+  color: white;
+  border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.01);
+  padding-top: 0.8%;
+  cursor: pointer;
+ }
+
+    #theorypart{
+      width: 100%;
+      height: 40vh;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #wholedivtheory{
+      width: 85%;
+      height: 90%;
+     
+    
+    }
+    .theorydetails-font{
+      padding-top: 2%;
+      color: rgb(144, 140, 140);
+      font-family: 'Lato';
+      font-size: 1vw;
+    }
+    #theorydetails{
+      margin-top: 5%;
+    }
+    
+     #socialmedia{
+      width: 100%;
+      height: 25vh;
+      
+     }
+     #socialmediafont{
+      padding-top: 10.6%;
+      font-family: 'Coporate';
+      font-size: 7vw;
+      text-align: center;
+     }
+     #socialmediaicons{
+      margin: auto;
+      margin-top: 5%;
+      width:55%;
+      height: 20%;
+      
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    
+     }
+     .commonicon{
+      font-size: 4.8vw;
+     }
+    
+     .commonicon:hover{
+      transform: scale(1.2);
+     }
+     #otherdetails{
+      width: 100%;
+      height: 40vh;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+     }
+     #wholedetails{
+      
+      width: 85%;
+      height: 26%;
+      align-self: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+     }
+     #legalnotice{
+      width:70%;
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+     }
+     .legalfont{
+      color: rgb(144, 140, 140);
+      font-family: 'Lato';
+      font-size: 1.3vw;
+     }
+     #languagefooter{
+      
+      width:15%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    
+    }
+    .commonfont5{
+      color: rgb(144, 140, 140);
+      font-family: 'Lato';
+      font-size: 1.3vw;
+     
+    }
+    #language1{
+      width: 47%;
+      border-right: 1px solid rgb(154, 148, 148);
+      height: 60%;
+     
+    }
+    #language2{
+      width: 50%;
+      text-align: center;
+      color: white;
+    }
+    .legalfont:hover{
+      color: white;
+      transition: 1s;
+      cursor: pointer;
+    }
+    .commonfont5:hover{
+      color: white;
+      transition: 1s;
+      cursor: pointer;
+    }
+    #biglogo{
+      
+      align-self: center;
+      width: 55px;
+      height: 48px;
+    }
+    #lastname{
+      
+      font-family: 'Coporate';
+      font-size: 4vw;
+      text-align: center;
+      color: white;
+    }
+    #topgo{
+      margin-bottom: 2%;
+      margin-top: 5%;
+      color:white;
+      font-size: 2vw;
+      text-align: center;
+    }
+    
+    a{
+      text-decoration: none;
+    }
+    #carvideo{
+      background-color: black;
+      width: 100%;
+      height: 60vh;
+    }
+    #firstvideo{
+      
+      margin-top: 3.8%;
+      width: 100%;
+      height: 90%;
+    }
+    #artbrief1{
+      width: 100%;
+      height: 50vh;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      
+    }
+    #artwholecontainer1{
+      margin-top: 5%;
+      width: 80%;
+      height: 80%;
+      
+      align-self: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .artsmallcontainer1{
+      width:45.5%;
+      height: 100%;
+      
+     
+    }
+    #artpic1{
+      width: 100%;
+      height: 60%;
+    }
+    .artfont1{
+      font-family: 'Coporate';
+      font-size: 3.5vw;
+      color: white;
+    }
+    .artfont2{
+      margin-top: 2%;
+      font-family: 'Lato';
+      font-size: 2vw;
+      color: white;
+    }
+    .discover3{
+      margin-top: 6%;
+      box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+      width: 37%;
+      height: 6.5%;
+      border-radius: 25px;
+      font-family:'slatepro';
+      letter-spacing: 0.5px;
+      font-size: 2.1vw;
+      border: 1px solid white;
+      padding-top: 1%;
+      cursor: pointer;
+     }
+     #sanfranscar{
+      width: 100%;
+      height: 50vh;
+     }
+     #sanscar{
+      width: 100%;
+      height: 100%;
+     }
+     #artbrief2{
+      width: 100%;
+      height: 60vh;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+     }
+     #artsmallcontainer2{
+      margin-top: 5%;
+      width:50%;
+      height: 80%;
+      
+    
+     }
+     .artfont3{
+      margin-top: 2%;
+      font-family: 'Lato';
+      font-size: 1.5vw;
+      color: white;
+     }
+     .discover4{
+      box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+      margin-top: 8%;
+      width: 37%;
+      height: 6.5%;
+      border-radius: 25px;
+      font-family:'slatepro';
+      letter-spacing: 0.5px;
+      font-size: 1.9vw;
+      border: 1px solid white;
+      padding-top: 1%;
+      cursor: pointer;
+     }
+     .discover3:hover{
+     box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+     }
+    
+     .discover4:hover{
+      box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+      }
+    
+     #artpic2{
+      width:100%;
+      height: 60%;
+     }
+     .artfont4{
+      margin-top: 1.5%;
+      font-family: 'Coporate';
+      font-size: 4vw;
+      color: white;
+    }
+    #artbrief3{
+      width: 100%;
+      height: 50vh;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      
+    }
+    #artbrief4{
+      width: 100%;
+      height: 50vh;
+      background-image: url(/Art-culture/Eleventhpic-artculture.jpg);
+      background-size: 100% 100%;
+    }
+    #artfont5{
+      padding-top: 5%;
+      padding-left: 8%;
+      font-family: 'Coporate';
+      font-size: 6vw;
+      color: white;
+    }
+
+
+
+
+
+    #sustainabilitybrief1{
+      width: 100%;
+      height: 50vh;
+      background-image: url(/images/sustainability/sustainabilitypic1.jpg);
+      background-size: 100% 100%;
+    }
+    #commonfont6{
+      padding-top: 20%;
+      padding-left: 7%;
+      font-family: 'Coporate';
+      font-size: 6vw;
+      color: white;
+    }
+    #commonfont7{
+      padding-top: 2.2%;
+      padding-left: 7%;
+      font-family: 'Lato';
+      font-size: 1.9vw;
+      color: white;
+    }
+    #sustainabilitybrief2{
+      width: 100%;
+      height: 50vh;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+    
+    }
+    #sustainabilitybrief3{
+      margin-top: 13%;
+      width: 100%;
+      height: 50vh;
+      background-image: url(/images/sustainability/sustainabilitypic4.jpg);
+      background-size: 100% 100%;
+      display: flex;
+      flex-direction: column;
+    
+    }
+    #sustainabilitybrief4{
+      width: 100%;
+      height: 50vh;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+    
+    }
+    #sustainabilitybrief5{
+      width: 100%;
+      height: 50vh;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+    
+    }
+    #sustainabilitybrief6{
+      width: 100%;
+      height: 50vh;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+    
+    }
+    #sustainabilitybrief7{
+      width: 100%;
+      height: 50vh;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+    
+    }
+    .susbox1{
+      margin-top: 13%;
+      align-self: center;
+      width: 90%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .susminibox1{
+      width: 32%;
+      height: 100%;
+    
+    }
+    .susminibox2{
+      width: 65%;
+      height: 100%;
+    background-image: url(/images/sustainability/sustainabilitypic2.jpg);
+    background-size: 100% 100%;
+    }
+    
+    .susminibox5{
+      width: 65%;
+      height: 100%;
+    background-image: url(/images/sustainability/sustainabilitypic6.jpg);
+    background-size: 100% 100%;
+    }
+    
+    .susminibox8{
+      width: 65%;
+      height: 100%;
+    background-image: url(/images/sustainability/sustainabilitypic8.jpg);
+    background-size: 100% 100%;
+    }
+    
+    .commonfont8{
+      margin-top: 13%;
+      font-family: 'Coporate';
+      font-size: 4.7vw;
+      
+    }
+    .commonfont9{
+      margin-top: 14%;
+      font-family: 'Lato';
+      font-size: 1.8vw;
+    }
+    .suspic1{
+      width: 100%;
+      height: 100%;
+     
+     
+    }
+    
+    .suspic3{
+      width: 100%;
+      height: 100%;
+    
+    }
+    .susminibox3{
+      width: 65%;
+      height: 100%;
+     background-image: url(/images/sustainability/sustainabilitypic5.jpg);
+     background-size: 100% 100%;
+    
+    }
+    .susminibox7{
+      width: 65%;
+      height: 100%;
+     background-image: url(/images/sustainability/sustainabilitypic7.jpg);
+     background-size: 100% 100%;
+    
+    }
+    .susminibox4{
+      width: 32%;
+      height: 100%;
+    
+    }
+    #designcar1{
+      width: 100%;
+      height: 50vh;
+      background-image: url(/images/Design/firstpic-design.jpg);
+      background-size: 100% 100%;
+    }
+    #commonfont10{
+      padding-top: 20%;
+      padding-left: 8%;
+      font-family: 'Coporate';
+      font-size: 6vw;
+      color: white;
+    }
+    #designbrief1{
+      width: 100%;
+      height: 40vh;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+    }
+    .designmainbox1{
+      margin-top: 6% ;
+      
+      width: 75%;
+      height: 65%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .designsubbox1{
+      width: 56%;
+      height: 100%;
+      
+      background-image: url(/images/Design/secondpic-design.jpg);
+      background-size: 100% 100%;
+    }
+    .designsubbox2{
+      width: 30%;
+      height: 100%;
+      
+    }
+    .commonfont11{
+      font-family: 'Lato';
+      font-size: 2vw;
+      margin-top: 20%;
+    }
+    #designbrief2{
+      width: 100%;
+      height: 40vh;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+    }
+    .designsubbox4{
+      width: 56%;
+      height: 100%;
+     
+      background-image: url(/images/Design/thirdpic-design.jpg);
+      background-size: 100% 100%;
+    }
+    .designsubbox3{
+      width: 30%;
+      height: 100%;
+      
+    }
+    .commonfont12{
+      font-family: 'Lato';
+      font-size: 2vw;
+      margin-top: 20%;
+      color: white;
+    }
+    #designbrief3{
+      width: 100%;
+      height: 55vh;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+    }
+    #commonfont13{
+      padding-top: 14%;
+      padding-right: 10%;
+      padding-left: 7%;
+      font-family: 'Coporate';
+      font-size: 7vw;
+      Color: black;
+    }
+    #designbrief4{
+      width: 100%;
+      height: 40vh;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+    }
+    .designsubbox5{
+      width: 56%;
+      height: 100%;
+        background-image: url(/images/Design/fourthpic-design.jpg);
+      background-size: 100% 100%;
+    }
+    #designbrief5{
+      width: 100%;
+      height: 50vh;
+      background-color: black;
+    }
+    #commonfont14{
+      text-align: center;
+      font-family: 'Coporate';
+      font-size: 7vw;
+      Color: white;
+    }
+    #designbrief6{
+      width:100%;
+      height: 50vh;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+    }
+    #designmainbox2{
+      width: 90%;
+      height: 80%;
+     
+      display: flex;
+    }
+    .designsubbox6{
+      width: 33.3%;
+      height: 100%;
+     
+    }
+    .designsubbox7{
+      width: 100%;
+      height: 50%;
+     
+    }
+    .smallpic1{
+      background-image: url(/images/Design/fifthpic-design.jpeg);
+      background-size: 100% 100%;
+    }
+    .smallpic2{
+      background-image: url(/images/Design/sixthpic-design.jpg);
+      background-size: 100% 100%;
+    }
+    .smallpic3{
+      background-image: url(/images/Design/seventhpic-design.jpg);
+      background-size: 100% 100%;
+    }
+    .smallpic4{
+      background-image: url(/images/Design/eigthpic-design.jpg);
+      background-size: 100% 100%;
+    }
+    #designbrief7{
+      width:100%;
+      height: 50vh;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+    }
+    #designmainbox3{
+      width: 90%;
+      height: 80%;
+      display: flex;
+    }
+    .designsubbox8{
+      width: 33.3%;
+      height: 100%;
+     }
+    .designsubbox9{
+      width: 100%;
+      height: 50%;
+    }
+    .smallpic5{
+      background-image: url(/images/Design/ninthpic-design.jpg);
+      background-size: 100% 100%;
+    }
+    .smallpic6{
+      background-image: url(/images/Design/tenthpic-design.jpg);
+      background-size: 100% 100%;
+    }
+    .smallpic7{
+      background-image: url(/images/Design/eleventhpic-design.jpg);
+      background-size: 100% 100%;
+    }
+    .smallpic8{
+      background-image: url(/images/Design/tewlvethpic-design.jpg);
+      background-size: 100% 100%;
+    }
+    .smallpic9{
+      background-image: url(/images/Design/thirteenthpic-design.jpg);
+      background-size: 100% 100%;
+    }
+    .smallpic10{
+      background-image: url(/images/Design/fourteenthpic-design.jpg);
+      background-size: 100% 100%;
+    }
+    #designbrief8{
+      width: 100%;
+      height: 60vh;
+      background-color: white;
+    }
+    #commonfont15{
+      padding-top: 10%;
+      padding-left: 8%;
+      font-family: 'Coporate';
+      font-size: 5.7vw;
+      color: black;
+    }
+    #innovationbrief1{
+      width: 100%;
+      height: 50vh;
+      background-image: url(/images/Innovation/innovationpic1.jpg);
+      background-size: 100% 100%;
+    }
+    #commonfont16{
+      padding-top: 22%;
+      
+      font-family: 'Coporate';
+      font-size: 6.7vw;
+      color: white;
+    }
+    #innovationbrief2{
+      width: 100%;
+      height: 50vh;
+      background-color: black;
+    }
+    @font-face {
+      font-family: 'malvery';
+      src: url(/fonts/MalveryOutline-6YKBg.otf);
+    }
+    #commonfont17{
+     
+      padding-top: 19%;
+      font-family: 'malvery';
+      font-size: 15vw;
+      color: white;
+      text-align: center;
+      position:relative;
+      float: clear;
+      
+    }
+    #commonfont18{
+      margin-top: 3%;
+      margin-right: 10%;
+      font-family: 'Coporate';
+      font-size: 5.7vw;
+      color: white;
+      text-align: center;
+      position: absolute;
+      
+     
+    }
+    #innovationbrief3{
+      width: 100%;
+      height: 50vh;
+      background-color: black;
+    }
+    #innovationvideo-1{
+      width: 100%;
+      height: 90%;
+    }
+    #innovationbrief4{
+      width: 100%;
+      height: 40vh;
+      background-color: black;
+    }
+    #commonfont19{
+      
+      padding:8%;
+      font-family: 'Coporate';
+      font-size: 4.7vw;
+      color: white;
+    }
+    #innovationbrief5{
+      width:100%;
+      height: 50vh;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #innovationbigbox1{
+      width:85%;
+      height: 80%;
+      
+      display: flex;
+      justify-content: space-between;
+    }
+    #innovationsmallbox1{
+      width:40%;
+      height: 100%;
+      
+    }
+    #innovationsmallbox2{
+      width:53%;
+      height: 100%;
+     
+      background-image: url(/images/Innovation/innovationpic2.jpg);
+      background-size: 100% 100%;
+    }
+    #commonfont20{
+      font-family: 'Lato';
+      font-size: 1.9vw;
+      margin-top: 27%;
+      color: white;
+    }
+    #innovationbrief6{
+      width: 100%;
+      height: 50vh;
+      background-color: black;
+      display: flex;
+    }
+    #lightbox{
+      width: 80%;
+      height: 70%;
+     
+    margin-top: 5%;
+    margin-left: 10%;
+    position: relative;
+    display: inline-block;
+    }
+    #commonfont21{
+      margin-top: 10%;
+      font-family: 'malvery';
+      font-size: 10vw;
+      color: white;
+      text-align: center;
+    
+    }
+    #innovationdigital{
+      margin-top: 30%;
+      margin-left: 25%;;
+      width: 50%;
+      height: 30%;
+      
+      display: inline-block;
+      position: absolute;
+    }
+    #commonfont22{
+      font-family: 'Coporate';
+      font-size: 10vw;
+      font-weight: bolder;
+      color: white;
+    }
+    #innovationbrief7{
+      width: 100%;
+      height: 50vh;
+      background-color: black;
+    }
+    #innovationvideo-2{
+      width: 100%;
+      height: 90%;
+    }
+    #innovationbrief8{
+      width: 100%;
+      height: 50vh;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #innovationbigbox2{
+    width: 90%;
+    height: 75%;
+    
+    display: flex;
+    }
+    .innovationsmallbox3{
+      width:50%;
+      height: 100%;
+     
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(/images/Innovation/innovationpic3.jpg);
+      background-size: 100% 100%;
+    }
+    .innovationsmallbox4{
+      width:50%;
+      height: 100%;
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(/images/Innovation/innovationpic4.jpg);
+      background-size: 100% 100%;
+    }
+    #innovationsmallbox5{
+      width: 70%;
+      height: 70%;
+      
+      background-image: url(/images/Innovation/innovationpic5.jpg);
+      background-size: 100% 100%;
+    }
+    #commonfont23{
+      font-family: 'Lato';
+      font-size: 1vw;
+      padding: 3%;
+      margin-top: 47%;
+      text-align: center;
+      color: white;
+      
+    }
+    #innovationbrief9{
+      width: 100%;
+      height: 50vh;
+      background-color: black;
+    }
+    #commonfont24{
+      padding-top: 20%;
+      font-family: 'malvery';
+      font-size: 11vw;
+      color: white;
+      text-align: center;
+    }
+    #innovationbrief10{
+      width:100%;
+      height: 50vh;
+      background-image: url(/images/Innovation/innovationpic6.jpg);
+      background-size: 100% 100%;
+    }
+    #innovationbrief11{
+      width:100%;
+      height: 50vh;
+      background-image: url(/images/Innovation/innovationpic7.jpg);
+      background-size: 100% 100%;
+    }
+    #commonfont25{
+      padding-top:12%;
+      
+      font-family: 'Coporate';
+      font-size: 9vw;
+     
+      color: white;
+    }
+    #innovationbrief12{
+      width: 100%;
+      height: 50vh;
+      background-image: url(/images/Innovation/innovationpic8.jpg);
+      background-size: 100% 100%;
+    }
+    #exclusivebrief1{
+      width:100%;
+      height: 50vh;
+      background-image: url(/images/Exclusive/exclusivepic1-1.jpg);
+      background-size: 100% 100%;
+    }
+    
+    
+    /* Exclusive */
+    
+    #commonfont26{
+      padding-top:1.5%;
+      padding-left: 8%;
+      font-family: 'Lato';
+      font-size: 1.8vw;
+      color: white;
+    }
+    
+    #exclusivebrief2{
+      width: 100%;
+      height: 50vh;
+      background-color: black;
+    }
+    
+    #commonfont27{
+      padding-top: 12%;
+      font-family: 'Coporate';
+      font-size: 9.8vw;
+      text-align: center;
+      color: white;
+    }
+    
+    #commonfont28{
+      padding-top:3%;
+      font-family: 'Lato';
+      font-size: 1.9vw;
+      text-align: center;
+      color: white;
+    }
+    .exclusivebrief3{
+      width: 100%;
+      height: 50vh;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+    
+      align-items: center;
+    }
+    .exclusivemainbox1{
+      width:90%;
+      height: 85%;
+    justify-content: space-between;
+    display: flex;
+    }
+    #exclusiveminibox1{
+      width: 34%;
+      height: 100%;
+      
+    }
+    #exclusiveminibox2{
+      background-image: url(/images/Exclusive/exclusivepic2.jpg);
+      background-size: 100% 100%;
+      width: 66%;
+      height: 100%;
+      
+    }
+    .commonfont29{
+      font-family: 'Coporate';
+      font-size: 3.9vw;
+      
+      color: white;
+    }
+    .commonfont30{
+      padding-top: 10%;
+      font-family: 'Lato';
+      font-size: 1.7vw;
+      padding-bottom: 10%;
+      color: white;
+    }
+    .commonfont31{
+      font-family: 'Lato';
+      font-size: 1vw;
+      line-height: 33px;
+      color: white;
+    }
+    #exclusiveminibox4{
+      width: 34%;
+      height: 100%;
+      
+    }
+    #exclusiveminibox3{
+      background-image: url(/images/Exclusive/exclusivepic3.jpg);
+      background-size: 100% 100%;
+      width: 63%;
+      height: 100%;
+      
+    }
+    #exclusivebrief4{
+      width:100%;
+      height: 50vh;
+      background-image: url(/images/Exclusive/exclusivepic4.jpg);
+      background-size: 100% 100%;
+    }
+    #commonfont32{
+      font-family: 'Coporate';
+      font-size: 9.8vw;
+      padding-top: 5%;
+      padding-left: 5%;
+      color: white;
+    }
+    
+    #vehiclelist{
+     width: 100%;
+     height: 70vh;
+    
+    }
+    #commonfont33{
+      padding-top: 16%;
+      font-family: 'Coporate';
+      font-size: 6.7vw;
+    }
+    #cartype{
+      margin-top: 2.5%;
+    width: 100%;
+    height: 5%;
+    justify-content: space-between;
+    display: flex;
+    }
+    .carname{
+      width: 18%;
+      height:100%;
+      
+      display: flex;
+    }
+    .caricon{
+      width: 30%;
+      height:100%;
+     
+    }
+    .carnametype{
+      width: 70%;
+      height:100%;
+      
+    }
+    .icon1{
+      
+      background-image: url(/images/caricons/caricon1-removebg-preview.png);
+      background-size: 100% 100%;
+    }
+    .icon2{
+      background-image: url(/images/caricons/caricon2.png);
+      background-size: 100% 100%;
+    }
+    .icon3{
+      margin-top: 8%;
+      background-image: url(/images/caricons/caricon3-removebg-preview.png);
+      background-size: 100% 50%;
+      background-repeat: no-repeat;
+    }
+    .icon4{
+      background-image: url(/images/caricons/caricon4.png);
+      background-size: 100% 100%;
+    }
+    .icon5{
+      background-image: url(/images/caricons/caricon5.png);
+      background-size: 100% 100%;
+    }
+    .commonfont34{
+      padding-top: 16%;
+      padding-left: 4%;
+      font-family: 'Lato';
+      font-size: 1.9vw;
+      color: black;
+    }
+    .type1car:hover{
+      background-color: skyblue;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+    .type2car:hover{
+      background-color: skyblue;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+    .type3car:hover{
+      background-color: skyblue;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+    .type4car:hover{
+      background-color: skyblue;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+    .type5car:hover{
+      background-color: skyblue;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+    #cartype1brief{
+      width: 100%;
+      height: 48vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-attachment: fixed;
+    }
+    #carbriefwhole{
+      width: 90%;
+      height: 70%;
+      
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .cardetails{
+      width: 30%;
+      height: 41%;
+      
+      box-shadow: 5px 5px 10px  black;
+      border-radius: 5px;
+    }
+    .commonfont35{
+      margin-top: 12%;
+      font-family: 'Coporate';
+      font-size: 2.8vw;
+      color: black;
+      text-align: center;
+    }
+    .commonfont36{
+      font-family: 'Lato';
+      font-size: 1.1vw;
+      text-align: center;
+      margin-top: 3%;
+    }
+    #carvideo2{
+      width: 100%;
+      height: 100%;
+    }
+    #carvideo2-1{
+      width: 100%;
+      height: 80%;
+    }
+    
+    .cardetails:hover{
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+    
+    
+    
+    
+    #cartype2brief{
+      width: 100%;
+      height: 68vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-attachment: fixed;
+    }
+    #carbriefwhole2{
+      width: 90%;
+      height: 90%;
+      
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .cardetails2{
+      width: 30%;
+      height: 25%;
+      
+      box-shadow: 10px 10px 20px  black;
+      border-radius: 5px;
+    }
+    .commonfont35{
+      margin-top: 12%;
+      font-family: 'Coporate';
+      font-size: 2.7vw;
+      color: black;
+      text-align: center;
+    }
+    .commonfont36{
+      font-family: 'Lato';
+      font-size: 1vw;
+      text-align: center;
+      margin-top: 3%;
+    }
+    .cardetails2:hover{
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+    #cartype3brief{
+      width: 100%;
+      height: 20vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-attachment: fixed;
+     
+    }
+    .cardetails3{
+      width: 25%;
+      height: 72%;
+      
+      box-shadow: 10px 10px 20px  black;
+      border-radius: 5px;
+    }
+    .cardetails3:hover{
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+    #cartype4brief{
+      width: 100%;
+      height: 20vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+     
+    }
+    #carbriefwhole3{
+      width: 50%;
+      height: 70%;
+      display: flex;
+      justify-content: space-between;
+      
+     
+    }
+    .cardetails4{
+      width: 42%;
+      height: 90%;
+      
+      box-shadow: 10px 10px 20px  black;
+      border-radius: 5px;
+    }
+    .cardetails4:hover{
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+    
+    
+    
+    
+    .vehicle1-details1{
+      width:100%;
+      height: 50vh;
+      background-image: url(/images/vehiclesdetails/vehicle-1/vehicle1-eqs-1.jpg);
+      background-size: 100% 100%;
+    }
+    .vehicle-learnmore{
+      margin-top: 7%;
+      margin-left: 10%;
+      width: 15%;
+      height: 7%;
+      background-color: rgb(85, 85, 162);
+      color: white;
+      border: 1px solid rgb(85, 85, 162);
+      font-family: 'Lato';
+      font-size: 1vw;
+    }
+    
+    .vehicle-learnmore:hover{
+      cursor: pointer;
+      transform: scale(1.1);
+      background-color: rgb(52, 52, 149);
+    }
+    
+    .vehicle1-text1{
+      font-family: 'Coporate';
+      font-size: 5.7vw;
+      color: white;
+      padding-top: 30%;
+      padding-left: 10%;
+    }
+    .vehicle1-text2{
+      font-family: 'Lato';
+      font-size: 1.1vw;
+      color: skyblue;
+      padding-top: 1%;
+      padding-left: 10%;
+    }
+    .vehicle1-details2{
+      width: 100%;
+      height: 25vh;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+    }
+    .vehicle1box-1{
+      margin-top: 5%;
+      margin-left: 5%;
+      width: 90%;
+      height: 40%;
+     
+    display: flex;
+    }
+    .vehicle1box-2{
+      width:25%;
+      height: 100%;
+     
+    }
+    .vehicle1box-3{
+      
+      width:50%;
+      height: 100%;
+     
+      
+    }
+    .vehicle1-text3{
+      font-family: 'Lato';
+      font-size: 1.3vw;
+      color: white;
+    }
+    .vehicle1-text4{
+      padding-top: 3%;
+      font-family: 'Coporate';
+      font-size: 2.2vw;
+      color: white;
+    }
+    .vehicle1-text6{
+      padding-top: 5.5%;
+      font-family: 'Coporate';
+      font-size: 3vw;
+      color: white;
+    }
+    .vehicle1-text5{
+      padding-top:6%;
+      font-family: 'Lato';
+      font-size: 1.3vw;
+      color: white;
+    }
+    .vehicle1-text13{
+      padding-top:2.5%;
+      font-family: 'Lato';
+      font-size: 1.3vw;
+      color: white;
+    }
+    .vehicle1-text7{
+      padding-top:3%;
+      font-family: 'Lato';
+      font-size: 1.3vw;
+      color: white;
+    }
+    .vehicle1-text8{
+      margin-top: 1%;
+      margin-left: 5%;
+      padding-right: 5%;
+      font-family: 'Lato';
+      font-size: 2vw;
+      color: gray;
+    }
+    .vehicle1-details3{
+      width: 100%;
+      height: 50vh;
+    
+    }
+    .vehicle1-text9{
+      padding-top: 3%;
+      padding-left: 9%;
+      font-family: 'Coporate';
+      font-size: 4.7vw;
+      color: black;
+    }
+    .vehicle1-exteriordetails{
+      width: 100%;
+      height: 60vh;
+    }
+    .vehicle1-text10{
+      padding-top: 8%;
+      padding-left: 9%;
+      font-family: 'Lato';
+      font-size: 1.5vw;
+      color: gray;
+    }
+    .vehicle1-text11{
+      padding-left: 9%;
+      padding-top: 1.5%;
+      padding-right: 7%;
+      font-family: 'Coporate';
+      font-size: 3.7vw;
+      color: black;
+    }
+    .vehicle1-text12{
+      padding-top: 1.5%;
+      padding-left: 9%;
+      padding-right: 7%;
+      font-family: 'Lato';
+      font-size: 1.5vw;
+      color: gray;
+    }
+    .vehicle1-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-1/vehicle1-eqs2.jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle1-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-1/vehicle1-eqs3.jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle1-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-1/vehicle1-eqs4.jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    
+    
+    .vehicle2-details1{
+      width:100%;
+      height: 50vh;
+      background-image: url(/images/vehiclesdetails/vehicle-2/vehicle2-aclass1.jpg);
+      background-size: 100% 100%;
+    }
+    .vehicle2-text1{
+      font-family: 'Coporate';
+      font-size: 5.6vw;
+      color: white;
+      padding-top: 20%;
+      padding-left: 6%;
+    }
+    .vehicle2-text2{
+      font-family: 'Lato';
+      font-size: 1.3vw;
+      color: black;
+      padding-top: 1%;
+      padding-left: 6%;
+    }
+    
+    .vehicle2-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-2/vehicle2-aclass2.jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle2-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-2/vehicle2-aclass3.jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle2-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-2/vehicle2-aclass4.jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    .vehicle3-details1{
+      width:100%;
+      height: 50vh;
+      background-image: url(/images/vehiclesdetails/vehicle-3/vehicle3-cclass1.jpg);
+      background-size: 100% 100%;
+    }
+    
+    .vehicle3-text2{
+      font-family: 'Lato';
+      font-size: 1.3vw;
+      color: white;
+      padding-top: 1%;
+      padding-left: 6%;
+    }
+    .vehicle3-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-3/vehicle3-cclass2.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle3-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-3/vehicle3-cclass3.jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle3-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-3/vehicle3-cclass4.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    
+    
+    .vehicle4-details1{
+      width:100%;
+      height: 50vh;
+      background-image: url(/images/vehiclesdetails/vehicle-4/vehicle4-eclass1.jpg);
+      background-size: 100% 100%;
+    }
+    
+    .vehicle4-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-4/vehicle4-eclass2.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle4-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-4/vehicle4-eclass3.jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle4-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-4/vehicle4-eclass4.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    
+    
+    .vehicle5-details1{
+      width:100%;
+      height: 50vh;
+      background-image: url(/images/vehiclesdetails/vehicle-5/vehicle5-sclass1.jpg);
+      background-size: 100% 100%;
+    }
+    
+    .vehicle5-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-5/vehicle5-sclass2.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle5-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-5/vehicle5-sclass3.jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle5-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-5/vehicle5-sclass4.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    
+    
+    .vehicle6-details1{
+      width:100%;
+      height: 50vh;
+      background-image: url(/images/vehiclesdetails/vehicle-6/vehicle6-maybach1.jpg);
+      background-size: 100% 100%;
+    }
+    
+    .vehicle6-text1{
+      font-family: 'Coporate';
+      font-size: 5.7vw;
+      color: black;
+      padding-top: 20%;
+      padding-left: 5%;
+    }
+    .vehicle6-text2{
+      font-family: 'Lato';
+      font-size: 1.7vw;
+      color: black;
+      padding-top: 1%;
+      padding-left: 5%;
+    }
+    
+    .vehicle6-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-6/vehicle6-maybach2.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle6-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-6/vehicle6-maybach3.jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle6-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-6/vehicle6-maybach4.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    
+    
+    
+    
+    .vehicle7-details1{
+      width:100%;
+      height: 50vh;
+      background-image: url(/images/vehiclesdetails/vehicle-7/vehicle7-eqb1.jpg);
+      background-size: 100% 100%;
+    }
+    
+    .vehicle7-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-7/vehicle7-eqb2.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle7-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-7/vehicle7-eqb3.jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle7-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-7/vehicle7-eqb3.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle8-details1{
+      width:100%;
+      height: 50vh;
+      background-image: url(/images/vehiclesdetails/vehicle-8/vehicle8-gla1.jpg);
+      background-size: 100% 100%;
+    }
+    
+    .vehicle8-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-8/vehicle8-gla2.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle8-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-8/vehicle8-gla3.jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle8-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-8/vehicle8-gla4.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    
+    
+    
+    .vehicle9-details1{
+      width:100%;
+      height: 50vh;
+      background-image: url(/images/vehiclesdetails/vehicle-9/vehicle9-glb1_1.jpg);
+      background-size: 100% 100%;
+    }
+    
+    .vehicle9-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-9/vehicle9-glb2_1.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle9-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-9/vehicle9-glb3.jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle9-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-9/vehicle9-glb4.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    
+    
+    
+    
+    .vehicle10-details1{
+      width:100%;
+      height: 50vh;
+      background-image: url(/images/vehiclesdetails/vehicle-10/ezgif.com-gif-maker.jpg);
+      background-size: 100% 100%;
+    }
+    
+    .vehicle10-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-10/ezgif.com-gif-maker\ \(1\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle10-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-10/ezgif.com-gif-maker\ \(2\).jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle10-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-10/ezgif.com-gif-maker\ \(3\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    
+    
+    
+    .vehicle11-details1{
+      width:100%;
+      height: 50vh;
+      background-image: url(/images/vehiclesdetails/vehicle-11/ezgif.com-gif-maker.jpg);
+      background-size: 100% 100%;
+    }
+    
+    .vehicle11-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-11/ezgif.com-gif-maker\ \(1\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle11-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-11/ezgif.com-gif-maker\ \(2\).jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle11-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-11/ezgif.com-gif-maker\ \(3\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    
+    
+    
+    
+    .vehicle12-details1{
+      width:100%;
+      height: 50vh;
+      background-image: url(/images/vehiclesdetails/vehicle-12/ezgif.com-gif-maker.jpg);
+      background-size: 100% 100%;
+    }
+    
+    .vehicle12-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-12/ezgif.com-gif-maker\ \(2\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle12-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-12/ezgif.com-gif-maker\ \(3\).jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle12-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-12/ezgif.com-gif-maker\ \(4\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle12-text1{
+      font-family: 'Coporate';
+      font-size: 5.7vw;
+      color: white;
+      padding-top: 53%;
+      padding-left:62%;
+    }
+    .vehicle12-text2{
+      font-family: 'Lato';
+      font-size: 1.3vw;
+      color: white;
+      padding-top: 1%;
+      padding-left: 62%;
+    }
+    
+    
+    
+    
+    
+    .vehicle13-details1{
+      width:100%;
+      height: 50vh;
+      background-image: url(/images/vehiclesdetails/vehicle-13/ezgif.com-gif-maker.jpg);
+      background-size: 100% 100%;
+    }
+    
+    .vehicle13-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-13/ezgif.com-gif-maker\ \(1\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle13-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-13/ezgif.com-gif-maker\ \(2\).jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle13-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-13/ezgif.com-gif-maker\ \(3\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    
+    
+    
+    
+    .vehicle14-details1{
+      width:100%;
+      height: 50vh;
+      background-image: url(/images/vehiclesdetails/vehicle-14/ezgif.com-gif-maker.jpg);
+      background-size: 100% 100%;
+    }
+    
+    .vehicle14-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-14/ezgif.com-gif-maker\ \(1\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle14-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-14/ezgif.com-gif-maker\ \(2\).jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle14-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-14/ezgif.com-gif-maker\ \(3\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    
+    
+    
+    
+    .vehicle15-details1{
+      width:100%;
+      height: 50vh;
+      background-image: url(/images/vehiclesdetails/vehicle-15/ezgif.com-gif-maker.jpg);
+      background-size: 100% 100%;
+    }
+    
+    .vehicle15-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-15/ezgif.com-gif-maker\ \(1\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle15-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-15/ezgif.com-gif-maker\ \(2\).jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle15-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-15/ezgif.com-gif-maker\ \(3\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    
+    
+    
+    
+    .vehicle16-details1{
+      width:100%;
+      height: 50vh;
+      background-image: url(/images/vehiclesdetails/vehicle-16/ezgif.com-gif-maker.jpg);
+      background-size: 100% 100%;
+    }
+    
+    .vehicle16-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-16/ezgif.com-gif-maker\ \(1\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle16-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-16/ezgif.com-gif-maker\ \(2\).jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle16-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-16/ezgif.com-gif-maker\ \(3\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    
+    
+    
+    
+    .vehicle17-details1{
+      width:100%;
+      height: 50vh;
+      background-image: url(/images/vehiclesdetails/vehicle-17/ezgif.com-gif-maker.jpg);
+      background-size: 100% 100%;
+    }
+    
+    .vehicle17-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-17/ezgif.com-gif-maker\ \(1\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle17-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-17/ezgif.com-gif-maker\ \(2\).jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle17-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-17/ezgif.com-gif-maker\ \(3\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    
+    
+    
+    
+    
+    
+    .vehicle18-details1{
+      width:100%;
+      height: 50vh;
+      background-image: url(/images/vehiclesdetails/vehicle-18/ezgif.com-gif-maker.jpg);
+      background-size: 100% 100%;
+    }
+    
+    .vehicle18-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-18/ezgif.com-gif-maker\ \(1\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle18-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-18/ezgif.com-gif-maker\ \(2\).jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle18-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-18/ezgif.com-gif-maker\ \(3\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    
+    
+    
+    
+    .vehicle19-details1{
+      width:100%;
+      height: 50vh;
+      background-image: url(/images/vehiclesdetails/vehicle-19/ezgif.com-gif-maker.jpg);
+      background-size: 100% 100%;
+    }
+    
+    .vehicle19-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-19/ezgif.com-gif-maker\ \(1\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle19-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-19/ezgif.com-gif-maker\ \(2\).jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle19-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-19/ezgif.com-gif-maker\ \(3\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle19-text1{
+      font-family: 'Coporate';
+      font-size: 5.6vw;
+      color: black;
+      padding-top: 39%;
+      padding-left: 5%;
+    }
+    .vehicle19-text2{
+      font-family: 'Lato';
+      font-size: 1.8vw;
+      color: black;
+      padding-top: 1%;
+      padding-left: 5%;
+    }
+
+
+
+}
+
+@media (min-width: 1001px) and (max-width:1280px) {
+  .topheading{
+    background-color: #0C0000;
+    width: 100%;
+    height: 73px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    position: fixed;
+  }
+  
+   #logo{
+   
+   
+    width: 55px;
+    height: 50px;
+  }
+#logohref{
+  margin-left: -18%;
+}
+
+
+  #languageselect{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 2%;
+    width: 24%;
+    height: 30%;
+  }
+  #languageheader{
+    
+    width: 150%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  
+  }
+  #selectheader{
+    padding-right: 7%;
+  }
+  #searchbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    width: 10%;
+    height: 30%;
+  }
+  @font-face{
+    font-family: 'Lato';
+    src: url(fonts/Lato-Regular.ttf);
+  }
+  @font-face{
+    font-family: 'Coporate';
+    src: url(fonts/Corporate-A-Regular.otf);
+  }
+  .commonfont1{
+    color: rgb(144, 140, 140);
+    font-family: 'Lato';
+    font-size: 1.3vw;
+    display: none;
+  }
+  #language1{
+    width: 47%;
+    border-right: 1px solid rgb(154, 148, 148);
+    height: 60%;
+   
+  }
+  #language2{
+    width: 50%;
+    text-align: center;
+    color: white;
+   
+  }
+  #search{
+    width: 50%;
+  }
+  #login{
+    width: 50%;
+  }
+  
+  .commonfont1:hover{
+    color: white;
+    transition: 1s;
+    cursor: pointer;
+  }
+  .topheading:hover{
+    .commonfont1{
+      display: block;
+     
+    }
+  }
+  .fa-magnifying-glass{
+    margin-top: 20%;
+    display: none;
+  }
+
+  .menulist{
+    margin-top: 70px;
+    list-style-type: none;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    
+    
+  }
+  #menubar{
+    width: 80%;
+    height: 65px;
+    display: flex;
+     flex-wrap: nowrap;
+     align-items: center;
+     justify-content: space-between;
+    
+  }
+  .commonfont3{
+    font-family: 'Lato';
+    font-size: 1.5vw;
+    color: white;
+    display: none;
+  }
+  
+  .commonfont3:hover{
+    cursor: pointer;
+      color: grey;
+      transition: 0.8s;
+  }
+  
+  .menulist:hover{
+    
+    background-color: rgba(0, 0, 0,0.7);
+    .commonfont3{
+      display: block;
+      
+    }
+  }
+  #landingpage-redcar{
+    background-image: url("images/Landingpage/Firstpic-landingpage.jpg");
+    background-size: 100% 100%;
+    height: 60vh;
+   }
+
+   #landingpage-redcar2{
+    background-image: url("images/Landingpage/Secondpic-landingpage.jpg");
+    background-size: 100% 100%;
+    height: 50vh;
+   
+   }
+  
+   #redcar1-font{
+    padding-top: 15%;
+    padding-left: 5%;
+    font-family: 'Coporate';
+    font-size: 4.1vw;
+    color: white;
+   
+   }
+   #discover1{
+    margin-top: 4.5%;
+    margin-left: 5%;
+    width: 10%;
+    height: 5%;
+    background-color: rgba(0, 0, 0, 0.01);
+    border: 1px solid white;
+    border-radius: 25px;
+    font-family:'slatepro';
+    letter-spacing: 0.5px;
+    font-size: 1.3vw;
+    
+    padding-top: 0.6%;
+    cursor: pointer;
+   }
+  
+  #discover1:hover{
+   background-color: #dfecf1;
+  
+  color: black;
+}
+   #discover2{
+    margin-top: 4.5%;
+    margin-left: 5%;
+    width: 10%;
+    height: 5%;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.01);
+    font-family:'slatepro';
+    letter-spacing: 0.5px;
+    font-size: 1.3vw;
+    border: 1px solid white;
+    padding-top: 0.6%;
+    cursor: pointer;
+   }
+   #discover2:hover{
+   background-color: #dfecf1;
+  
+  color: black;
+}
+  
+  #discover1:hover{
+   background-color: #dfecf1;
+  
+  color: black;
+}
+  
+   #redcar2-font{
+    
+   padding-top: 10%;
+   padding-left: 5%;
+    font-family: 'Coporate';
+    font-size: 4.7vw;
+    color: white;
+   }
+
+  #slider-1{
+  height: 30vh;
+  display: grid;
+	place-items: center;
+    margin-bottom:5%;
+}
+.slider{
+	
+	height: 250px;
+	margin: auto;
+	position: relative;
+	width: 100%;
+	display: grid;
+	place-items: center;
+	overflow: hidden;
+	
+}
+
+
+
+.slide-track{
+	
+	display: flex;
+	width: calc(250px * 18);
+	animation: scroll 40s linear infinite;
+	
+}
+
+
+.slide-track:hover{
+  cursor: pointer;
+	animation-play-state: paused;
+  
+}
+
+
+@keyframes scroll{
+	
+	0%{
+		transform: translateX(0);
+	}
+	100%{
+		transform: translateX(calc(-250px * 9));
+	}
+}
+
+.slide{
+  background-color: white;
+	height: 200px;
+	width: 250px;
+	display: flex;
+	align-items: center;
+	padding: 15px;
+	perspective: 100px;
+	
+}
+
+img{
+	width: 100%;
+	transition: transform 1s;
+	
+}
+
+
+img:hover{
+	transform: translateZ(20px);
+ 
+}
+
+
+  #whitearea{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 350vh;
+ }
+ #row1-car{
+  display: flex;
+   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  width: 100%;
+  height:35%;
+ 
+ }
+ #row1-car1{
+   
+  width:100%;
+  height: 45%;
+ 
+ }
+ #row1-car2{
+  margin-top: 10%;
+  width:100%;
+  height: 70%;
+  
+ }
+ @font-face{
+  font-family:'slatepro';
+  src: url(fonts/SlatePro-Condensed.ttf);
+ }
+ .row1-car-font1{
+   text-align: center;
+  font-family:'slatepro';
+  font-size: 2.6vw;
+  letter-spacing: 0.5px;
+ }
+ .row1-car-font2{
+   text-align: center;
+  margin-top: 4%;
+  font-family: 'Coporate';
+  font-size: 3.8vw;
+  letter-spacing: 0.5px;
+ }
+ #row1-car-image1{
+  margin-top: 10%;
+  width: 100%;
+  height:70%;
+ }
+ #row1-car-image2{
+  margin-top: 11%;
+  width: 100%;
+  height:70%;
+ }
+ #row2-car{
+  margin-top: 20%;
+  display: flex;
+   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  width: 100%;
+  height:35%;
+ 
+ }
+ #row2-car1{
+  width:100%;
+  height: 60%;
+ 
+ }
+ #row2-car2{
+  width:100%;
+  height: 50%;
+ 
+ }
+ .row2-car-font1{
+   text-align: center;
+  font-family:'slatepro';
+  font-size: 2.6vw;
+  letter-spacing: 0.5px;
+ }
+ .row2-car-font2{
+   text-align: center;
+  margin-top: 4%;
+  font-family: 'Coporate';
+  font-size: 3.8vw;
+  letter-spacing: 0.5px;
+ }
+ #row2-car-image1{
+  margin-top: 10%;
+  width: 100%;
+  height:60%;
+ }
+ #row2-car-image2{
+  margin-top: 11%;
+  width: 100%;
+  height:60%;
+ }
+
+#row3-car{
+  
+  width: 100%;
+  height:16%;
+ 
+ }
+ #row3-car1{
+  margin-bottom: 15%;
+  width:100%;
+  height: 100%;
+ }
+ .row3-car-font1{
+   text-align: center;
+  font-family:'slatepro';
+  font-size: 2.6vw;
+  letter-spacing: 0.5px;
+ }
+ .row3-car-font2{
+   text-align: center;
+  margin-top: 4%;
+  font-family: 'Coporate';
+  font-size: 3.8vw;
+  letter-spacing: 0.5px;
+ }
+ #row3-car-image1{
+  
+  margin-top: 10%;
+  width: 100%;
+  height:75%;
+ }
+ #row1-car-image1:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 0 5px skyblue, 0 0 15px skyblue, 0 0 25px skyblue, 0 0 50px skyblue, 0 0 100px skyblue;
+ }
+ #row1-car-image2:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 0 5px rgb(48, 106, 130), 0 0 15px rgb(48, 106, 130), 0 0 25px rgb(48, 106, 130), 0 0 50px rgb(48, 106, 130), 0 0 100px rgb(48, 106, 130);
+ }
+ #row2-car-image1:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 0 5px lightgreen, 0 0 15px lightgreen, 0 0 25px lightgreen, 0 0 50px lightgreen, 0 0 100px lightgreen;
+ }
+ #row2-car-image2:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 0 5px skyblue, 0 0 15px skyblue, 0 0 25px skyblue, 0 0 50px skyblue, 0 0 100px skyblue;
+ }
+ #row3-car-image1:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 0 5px rgb(84, 84, 170), 0 0 15px  rgb(84, 84, 170), 0 0 25px  rgb(84, 84, 170), 0 0 50px  rgb(84, 84, 170), 0 0 100px  rgb(84, 84, 170);
+ }
+
+
+ #bluecar{
+width: 100%;
+height: 40vh;
+background-image: url(Landingpage/Eigthpic-landingpage.jpg);
+background-size: 100% 100%;
+ }
+ #bluecar-font1{
+  padding-top: 6%;
+  padding-left: 6%;
+  font-family:'slatepro';
+  font-size: 1.8vw;
+  letter-spacing: 0.5px;
+  color: white;
+ }
+ #bluecar-font2{
+  padding-left: 6%;
+  font-family: 'Coporate';
+  font-size: 5.8vw;
+  letter-spacing: 0.5px;
+  color: white;
+ }
+ #discover{
+  margin-top: 2.5%;
+  margin-left: 6%;
+   width: 10%;
+    height: 6%;
+  border-radius: 25px;
+  font-family:'slatepro';
+  letter-spacing: 0.5px;
+  font-size: 1.5vw;
+  background-color: rgba(0, 0, 0, 0.01);
+  border: 1px solid white;
+  padding-top: 0.2%;
+  cursor: pointer;
+ }
+
+    #theorypart{
+      width: 100%;
+      height: 50vh;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #wholedivtheory{
+      width: 85%;
+      height: 90%;
+     
+    
+    }
+    .theorydetails-font{
+      padding-top: 2%;
+      color: rgb(144, 140, 140);
+      font-family: 'Lato';
+      font-size: 0.83vw;
+    }
+    #theorydetails{
+      margin-top: 4%;
+      margin-left: 6%;
+    }
+    
+     #socialmedia{
+      width: 100%;
+      height: 30vh;
+      
+     }
+     #socialmediafont{
+      padding-top: 10.6%;
+      font-family: 'Coporate';
+      font-size: 7.3vw;
+      text-align: center;
+     }
+     #socialmediaicons{
+      margin: auto;
+      margin-top: 5%;
+      width:50%;
+      height: 20%;
+      
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    
+     }
+     .commonicon{
+      font-size: 3.6vw;
+     }
+    
+     .commonicon:hover{
+      transform: scale(1.2);
+     }
+     #otherdetails{
+      width: 100%;
+      height: 30vh;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+     }
+     #wholedetails{
+      
+      width: 85%;
+      height: 26%;
+      align-self: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+     }
+     #legalnotice{
+      width:70%;
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+     }
+     .legalfont{
+      color: rgb(144, 140, 140);
+      font-family: 'Lato';
+      font-size: 1.3vw;
+     }
+     #languagefooter{
+      
+      width:15%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    
+    }
+    .commonfont5{
+      color: rgb(144, 140, 140);
+      font-family: 'Lato';
+      font-size: 1.3vw;
+     
+    }
+    #language1{
+      width: 47%;
+      border-right: 1px solid rgb(154, 148, 148);
+      height: 60%;
+     
+    }
+    #language2{
+      width: 50%;
+      text-align: center;
+      color: white;
+    }
+    .legalfont:hover{
+      color: white;
+      transition: 1s;
+      cursor: pointer;
+    }
+    .commonfont5:hover{
+      color: white;
+      transition: 1s;
+      cursor: pointer;
+    }
+    #biglogo{
+      
+      align-self: center;
+      width: 8.5%;
+      height: 19%;
+    }
+    #lastname{
+      
+      font-family: 'Coporate';
+      font-size: 3.7vw;
+      text-align: center;
+      color: white;
+    }
+    #topgo{
+      margin-bottom: 2%;
+      margin-top: 5%;
+      color:white;
+      font-size: 1.5vw;
+      text-align: center;
+    }
+    
+    a{
+      text-decoration: none;
+    }
+    #carvideo{
+      background-color: black;
+      width: 100%;
+      height: 70vh;
+    }
+    #firstvideo{
+      
+      margin-top: 3.8%;
+      width: 100%;
+      height: 90%;
+    }
+    #artbrief1{
+      width: 100%;
+      height: 60vh;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      
+    }
+    #artwholecontainer1{
+      margin-top: 5%;
+      width: 80%;
+      height: 80%;
+      
+      align-self: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .artsmallcontainer1{
+      width:45.5%;
+      height: 100%;
+      
+     
+    }
+    #artpic1{
+      width: 100%;
+      height: 60%;
+    }
+    .artfont1{
+      font-family: 'Coporate';
+      font-size: 3.7vw;
+      color: white;
+    }
+    .artfont2{
+      margin-top: 2%;
+      font-family: 'Lato';
+      font-size: 1.9vw;
+      color: white;
+    }
+    .discover3{
+      margin-top: 7%;
+      box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+      width: 37%;
+      height: 6.5%;
+      border-radius: 25px;
+      font-family:'slatepro';
+      letter-spacing: 0.5px;
+      font-size: 22px;
+      border: 1px solid white;
+      padding-top: 1%;
+      cursor: pointer;
+     }
+     #sanfranscar{
+      width: 100%;
+      height: 50vh;
+     }
+     #sanscar{
+      width: 100%;
+      height: 100%;
+     }
+     #artbrief2{
+      width: 100%;
+      height: 60vh;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+     }
+     #artsmallcontainer2{
+      margin-top: 5%;
+      width:50%;
+      height: 80%;
+      
+    
+     }
+     .artfont3{
+      margin-top: 2%;
+      font-family: 'Lato';
+      font-size: 1.7vw;
+      color: white;
+     }
+     .discover4{
+      box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+      margin-top: 8%;
+      width: 37%;
+      height: 6.5%;
+      border-radius: 25px;
+      font-family:'slatepro';
+      letter-spacing: 0.5px;
+      font-size: 22px;
+      border: 1px solid white;
+      padding-top: 1%;
+      cursor: pointer;
+     }
+     .discover3:hover{
+     box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+     }
+    
+     .discover4:hover{
+      box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+      }
+    
+     #artpic2{
+      width:100%;
+      height: 60%;
+     }
+     .artfont4{
+      margin-top: 1.5%;
+      font-family: 'Coporate';
+      font-size: 3.7vw;
+      color: white;
+    }
+    #artbrief3{
+      width: 100%;
+      height: 60vh;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      
+    }
+    #artbrief4{
+      width: 100%;
+      height: 60vh;
+      background-image: url(/Art-culture/Eleventhpic-artculture.jpg);
+      background-size: 100% 100%;
+    }
+    #artfont5{
+      padding-top: 5%;
+      padding-left: 8%;
+      font-family: 'Coporate';
+      font-size: 7.5vw;
+      color: white;
+    }
+
+
+
+
+
+    #sustainabilitybrief1{
+      width: 100%;
+      height: 60vh;
+      background-image: url(/images/sustainability/sustainabilitypic1.jpg);
+      background-size: 100% 100%;
+    }
+    #commonfont6{
+      padding-top: 10%;
+      padding-left: 7%;
+      font-family: 'Coporate';
+      font-size: 6.5vw;
+      color: white;
+    }
+    #commonfont7{
+      padding-top: 2.2%;
+      padding-left: 7%;
+      font-family: 'Lato';
+      font-size: 1.8vw;
+      color: white;
+    }
+    #sustainabilitybrief2{
+      width: 100%;
+      height: 60vh;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+    
+    }
+    #sustainabilitybrief3{
+      margin-top: 13%;
+      width: 100%;
+      height: 60vh;
+      background-image: url(/images/sustainability/sustainabilitypic4.jpg);
+      background-size: 100% 100%;
+      display: flex;
+      flex-direction: column;
+    
+    }
+    #sustainabilitybrief4{
+      width: 100%;
+      height: 60vh;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+    
+    }
+    #sustainabilitybrief5{
+      width: 100%;
+      height: 60vh;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+    
+    }
+    #sustainabilitybrief6{
+      width: 100%;
+      height: 60vh;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+    
+    }
+    #sustainabilitybrief7{
+      width: 100%;
+      height: 60vh;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+    
+    }
+    .susbox1{
+      margin-top: 13%;
+      align-self: center;
+      width: 90%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .susminibox1{
+      width: 32%;
+      height: 100%;
+    
+    }
+    .susminibox2{
+      width: 65%;
+      height: 100%;
+    background-image: url(/images/sustainability/sustainabilitypic2.jpg);
+    background-size: 100% 100%;
+    }
+    
+    .susminibox5{
+      width: 65%;
+      height: 100%;
+    background-image: url(/images/sustainability/sustainabilitypic6.jpg);
+    background-size: 100% 100%;
+    }
+    
+    .susminibox8{
+      width: 65%;
+      height: 100%;
+    background-image: url(/images/sustainability/sustainabilitypic8.jpg);
+    background-size: 100% 100%;
+    }
+    
+    .commonfont8{
+      margin-top: 13%;
+      font-family: 'Coporate';
+      font-size: 5.4vw;
+      
+    }
+    .commonfont9{
+      margin-top: 14%;
+      font-family: 'Lato';
+      font-size: 1.8vw;
+    }
+    .suspic1{
+      width: 100%;
+      height: 100%;
+     
+     
+    }
+    
+    .suspic3{
+      width: 100%;
+      height: 100%;
+    
+    }
+    .susminibox3{
+      width: 65%;
+      height: 100%;
+     background-image: url(/images/sustainability/sustainabilitypic5.jpg);
+     background-size: 100% 100%;
+    
+    }
+    .susminibox7{
+      width: 65%;
+      height: 100%;
+     background-image: url(/images/sustainability/sustainabilitypic7.jpg);
+     background-size: 100% 100%;
+    
+    }
+    .susminibox4{
+      width: 32%;
+      height: 100%;
+    
+    }
+
+
+
+
+
+    #designcar1{
+      width: 100%;
+      height: 60vh;
+      background-image: url(/images/Design/firstpic-design.jpg);
+      background-size: 100% 100%;
+    }
+    #commonfont10{
+      padding-top: 8%;
+      padding-left: 8%;
+      font-family: 'Coporate';
+      font-size: 6.8vw;
+      color: white;
+    }
+    #designbrief1{
+      width: 100%;
+      height: 50vh;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+    }
+    .designmainbox1{
+      margin-top: 6% ;
+      
+      width: 75%;
+      height: 65%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .designsubbox1{
+      width: 56%;
+      height: 100%;
+      
+      background-image: url(/images/Design/secondpic-design.jpg);
+      background-size: 100% 100%;
+    }
+    .designsubbox2{
+      width: 30%;
+      height: 100%;
+      
+    }
+    .commonfont11{
+      font-family: 'Lato';
+      font-size: 1.8vw;
+      margin-top: 20%;
+    }
+    #designbrief2{
+      width: 100%;
+      height: 50vh;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+    }
+    .designsubbox4{
+      width: 56%;
+      height: 100%;
+     
+      background-image: url(/images/Design/thirdpic-design.jpg);
+      background-size: 100% 100%;
+    }
+    .designsubbox3{
+      width: 30%;
+      height: 100%;
+      
+    }
+    .commonfont12{
+      font-family: 'Lato';
+      font-size: 1.8vw;
+      margin-top: 20%;
+      color: white;
+    }
+    #designbrief3{
+      width: 100%;
+      height: 55vh;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+    }
+    #commonfont13{
+      padding-top: 9%;
+      padding-right: 10%;
+      padding-left: 7%;
+      font-family: 'Coporate';
+      font-size: 7.7vw;
+      Color: black;
+    }
+    #designbrief4{
+      width: 100%;
+      height: 50vh;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+    }
+    .designsubbox5{
+      width: 56%;
+      height: 100%;
+        background-image: url(/images/Design/fourthpic-design.jpg);
+      background-size: 100% 100%;
+    }
+    #designbrief5{
+      width: 100%;
+      height: 50vh;
+      background-color: black;
+    }
+    #commonfont14{
+      padding-top: 15%;
+      text-align: center;
+      font-family: 'Coporate';
+      font-size: 7.5vw;
+      Color: white;
+    }
+    #designbrief6{
+      width:100%;
+      height: 55vh;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+    }
+    #designmainbox2{
+      width: 90%;
+      height: 80%;
+     
+      display: flex;
+    }
+    .designsubbox6{
+      width: 33.3%;
+      height: 100%;
+     
+    }
+    .designsubbox7{
+      width: 100%;
+      height: 50%;
+     
+    }
+    .smallpic1{
+      background-image: url(/images/Design/fifthpic-design.jpeg);
+      background-size: 100% 100%;
+    }
+    .smallpic2{
+      background-image: url(/images/Design/sixthpic-design.jpg);
+      background-size: 100% 100%;
+    }
+    .smallpic3{
+      background-image: url(/images/Design/seventhpic-design.jpg);
+      background-size: 100% 100%;
+    }
+    .smallpic4{
+      background-image: url(/images/Design/eigthpic-design.jpg);
+      background-size: 100% 100%;
+    }
+    #designbrief7{
+      width:100%;
+      height: 55vh;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+    }
+    #designmainbox3{
+      width: 90%;
+      height: 80%;
+      display: flex;
+    }
+    .designsubbox8{
+      width: 33.3%;
+      height: 100%;
+     }
+    .designsubbox9{
+      width: 100%;
+      height: 50%;
+    }
+    .smallpic5{
+      background-image: url(/images/Design/ninthpic-design.jpg);
+      background-size: 100% 100%;
+    }
+    .smallpic6{
+      background-image: url(/images/Design/tenthpic-design.jpg);
+      background-size: 100% 100%;
+    }
+    .smallpic7{
+      background-image: url(/images/Design/eleventhpic-design.jpg);
+      background-size: 100% 100%;
+    }
+    .smallpic8{
+      background-image: url(/images/Design/tewlvethpic-design.jpg);
+      background-size: 100% 100%;
+    }
+    .smallpic9{
+      background-image: url(/images/Design/thirteenthpic-design.jpg);
+      background-size: 100% 100%;
+    }
+    .smallpic10{
+      background-image: url(/images/Design/fourteenthpic-design.jpg);
+      background-size: 100% 100%;
+    }
+    #designbrief8{
+      width: 100%;
+      height: 60vh;
+      background-color: white;
+    }
+    #commonfont15{
+      padding-top: 10%;
+      padding-left: 8%;
+      font-family: 'Coporate';
+      font-size: 5.5vw;
+      color: black;
+    }
+
+
+
+
+
+
+    #innovationbrief1{
+      width: 100%;
+      height: 60vh;
+      background-image: url(/images/Innovation/innovationpic1.jpg);
+      background-size: 100% 100%;
+    }
+    #commonfont16{
+      padding-top: 8%;
+      
+      font-family: 'Coporate';
+      font-size: 6.9vw;
+      color: white;
+    }
+    #innovationbrief2{
+      width: 100%;
+      height: 60vh;
+      background-color: black;
+    }
+    @font-face {
+      font-family: 'malvery';
+      src: url(/fonts/MalveryOutline-6YKBg.otf);
+    }
+    #commonfont17{
+     
+      padding-top: 19%;
+      font-family: 'malvery';
+      font-size: 20vw;
+      color: white;
+      text-align: center;
+      position:relative;
+      float: clear;
+      
+    }
+    #commonfont18{
+      margin-top: 3%;
+      margin-right: 10%;
+      font-family: 'Coporate';
+      font-size: 5.7vw;
+      color: white;
+      text-align: center;
+      position: absolute;
+      
+     
+    }
+    #innovationbrief3{
+      width: 100%;
+      height: 60vh;
+      background-color: black;
+    }
+    #innovationvideo-1{
+      width: 100%;
+      height: 90%;
+    }
+    #innovationbrief4{
+      width: 100%;
+      height: 50vh;
+      background-color: black;
+    }
+    #commonfont19{
+      
+      padding:8%;
+      font-family: 'Coporate';
+      font-size: 4.9vw;
+      color: white;
+    }
+    #innovationbrief5{
+      width:100%;
+      height: 60vh;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #innovationbigbox1{
+      width:85%;
+      height: 80%;
+      
+      display: flex;
+      justify-content: space-between;
+    }
+    #innovationsmallbox1{
+      width:40%;
+      height: 100%;
+      
+    }
+    #innovationsmallbox2{
+      width:53%;
+      height: 100%;
+     
+      background-image: url(/images/Innovation/innovationpic2.jpg);
+      background-size: 100% 100%;
+    }
+    #commonfont20{
+      font-family: 'Lato';
+      font-size: 1.9vw;
+      margin-top: 27%;
+      color: white;
+    }
+    #innovationbrief6{
+      width: 100%;
+      height: 50vh;
+      background-color: black;
+      display: flex;
+    }
+    #lightbox{
+      width: 80%;
+      height: 70%;
+     
+    margin-top: 5%;
+    margin-left: 10%;
+    position: relative;
+    display: inline-block;
+    }
+    #commonfont21{
+      margin-top: 13%;
+      font-family: 'malvery';
+      font-size: 12.5vw;
+      color: white;
+      text-align: center;
+    
+    }
+    #innovationdigital{
+      margin-top: 30%;
+      margin-left: 27.5%;
+      width: 50%;
+      height: 30%;
+      
+      display: inline-block;
+      position: absolute;
+    }
+    #commonfont22{
+      font-family: 'Coporate';
+      font-size: 12vw;
+      font-weight: bolder;
+      color: white;
+     
+    }
+    #innovationbrief7{
+      width: 100%;
+      height: 60vh;
+      background-color: black;
+    }
+    #innovationvideo-2{
+      width: 100%;
+      height: 90%;
+    }
+    #innovationbrief8{
+      width: 100%;
+      height: 60vh;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #innovationbigbox2{
+    width: 90%;
+    height: 75%;
+    
+    display: flex;
+    }
+    .innovationsmallbox3{
+      width:50%;
+      height: 100%;
+     
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(/images/Innovation/innovationpic3.jpg);
+      background-size: 100% 100%;
+    }
+    .innovationsmallbox4{
+      width:50%;
+      height: 100%;
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(/images/Innovation/innovationpic4.jpg);
+      background-size: 100% 100%;
+    }
+    #innovationsmallbox5{
+      width: 70%;
+      height: 70%;
+      
+      background-image: url(/images/Innovation/innovationpic5.jpg);
+      background-size: 100% 100%;
+    }
+    #commonfont23{
+      font-family: 'Lato';
+      font-size: 0.9vw;
+      padding: 3%;
+      margin-top: 47%;
+      text-align: center;
+      color: white;
+      
+    }
+    #innovationbrief9{
+      width: 100%;
+      height: 50vh;
+      background-color: black;
+    }
+    #commonfont24{
+      padding-top: 20%;
+      font-family: 'malvery';
+      font-size: 14vw;
+      color: white;
+      text-align: center;
+    }
+    #innovationbrief10{
+      width:100%;
+      height: 55vh;
+      background-image: url(/images/Innovation/innovationpic6.jpg);
+      background-size: 100% 100%;
+    }
+    #innovationbrief11{
+      width:100%;
+      height: 55vh;
+      background-image: url(/images/Innovation/innovationpic7.jpg);
+      background-size: 100% 100%;
+    }
+    #commonfont25{
+      padding-top:12%;
+      
+      font-family: 'Coporate';
+      font-size: 9vw;
+     
+      color: white;
+    }
+    #innovationbrief12{
+      width: 100%;
+      height: 55vh;
+      background-image: url(/images/Innovation/innovationpic8.jpg);
+      background-size: 100% 100%;
+    }
+
+
+
+
+
+
+    #exclusivebrief1{
+      width:100%;
+      height: 60vh;
+      background-image: url(/images/Exclusive/exclusivepic1-1.jpg);
+      background-size: 100% 100%;
+    }
+    
+    #commonfont26{
+      padding-top:1.5%;
+      padding-left: 8%;
+      font-family: 'Lato';
+      font-size: 1.9vw;
+      color: white;
+    }
+    
+    #exclusivebrief2{
+      width: 100%;
+      height: 60vh;
+      background-color: black;
+    }
+    
+    #commonfont27{
+      padding-top: 17%;
+      font-family: 'Coporate';
+      font-size: 11.2vw;
+      text-align: center;
+      color: white;
+    }
+    
+    #commonfont28{
+      padding:4%;
+      font-family: 'Lato';
+      font-size: 1.4vw;
+      text-align: center;
+      color: white;
+    }
+    .exclusivebrief3{
+      width: 100%;
+      height: 60vh;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+    
+      align-items: center;
+    }
+    .exclusivemainbox1{
+      width:90%;
+      height: 85%;
+    justify-content: space-between;
+    display: flex;
+    }
+    #exclusiveminibox1{
+      width: 34%;
+      height: 100%;
+      
+    }
+    #exclusiveminibox2{
+      background-image: url(/images/Exclusive/exclusivepic2.jpg);
+      background-size: 100% 100%;
+      width: 66%;
+      height: 100%;
+      
+    }
+    .commonfont29{
+      font-family: 'Coporate';
+      font-size: 3.9vw;
+      
+      color: white;
+    }
+    .commonfont30{
+      padding-top: 10%;
+      font-family: 'Lato';
+      font-size: 1.2vw;
+      padding-bottom: 10%;
+      color: white;
+    }
+    .commonfont31{
+      font-family: 'Lato';
+      font-size: 1.1vw;
+      line-height: 33px;
+      color: white;
+    }
+    #exclusiveminibox4{
+      width: 34%;
+      height: 100%;
+      
+    }
+    #exclusiveminibox3{
+      background-image: url(/images/Exclusive/exclusivepic3.jpg);
+      background-size: 100% 100%;
+      width: 63%;
+      height: 100%;
+      
+    }
+    #exclusivebrief4{
+      width:100%;
+      height: 60vh;
+      background-image: url(/images/Exclusive/exclusivepic4.jpg);
+      background-size: 100% 100%;
+    }
+    #commonfont32{
+      font-family: 'Coporate';
+      font-size: 9.2vw;
+      padding-top: 5%;
+      padding-left: 5%;
+      color: white;
+    }
+    
+    #vehiclelist{
+     width: 100%;
+     height: 80vh;
+    
+    }
+    #commonfont33{
+      padding-top: 10%;
+      font-family: 'Coporate';
+      font-size: 6.8vw;
+    }
+    #cartype{
+      margin-top: 2.5%;
+    width: 80%;
+    height: 5%;
+    justify-content: space-between;
+    display: flex;
+    }
+    .carname{
+      width: 18%;
+      height:100%;
+      
+      display: flex;
+    }
+    .caricon{
+      width: 30%;
+      height:100%;
+     
+    }
+    .carnametype{
+      width: 70%;
+      height:100%;
+      
+    }
+    .icon1{
+      
+      background-image: url(/images/caricons/caricon1-removebg-preview.png);
+      background-size: 100% 100%;
+    }
+    .icon2{
+      background-image: url(/images/caricons/caricon2.png);
+      background-size: 100% 100%;
+    }
+    .icon3{
+      margin-top: 8%;
+      background-image: url(/images/caricons/caricon3-removebg-preview.png);
+      background-size: 100% 50%;
+      background-repeat: no-repeat;
+    }
+    .icon4{
+      background-image: url(/images/caricons/caricon4.png);
+      background-size: 100% 100%;
+    }
+    .icon5{
+      background-image: url(/images/caricons/caricon5.png);
+      background-size: 100% 100%;
+    }
+    .commonfont34{
+      padding-top: 14%;
+      padding-left: 4%;
+      font-family: 'Lato';
+      font-size: 1.6vw;
+      color: black;
+    }
+    .type1car:hover{
+      background-color: skyblue;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+    .type2car:hover{
+      background-color: skyblue;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+    .type3car:hover{
+      background-color: skyblue;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+    .type4car:hover{
+      background-color: skyblue;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+    .type5car:hover{
+      background-color: skyblue;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+    #cartype1brief{
+      width: 100%;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-attachment: fixed;
+    }
+    #carbriefwhole{
+      width: 80%;
+      height: 80%;
+      
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .cardetails{
+      width: 30%;
+      height: 41%;
+      
+      box-shadow: 10px 10px 20px  black;
+      border-radius: 5px;
+    }
+    .commonfont35{
+      margin-top: 12%;
+      font-family: 'Coporate';
+      font-size: 2.1vw;
+      color: black;
+      text-align: center;
+    }
+    .commonfont36{
+      font-family: 'Lato';
+      font-size: 0.9vw;
+      text-align: center;
+      margin-top: 3%;
+    }
+    #carvideo2{
+      width: 100%;
+      height: 100%;
+    }
+    #carvideo2-1{
+      width: 100%;
+      height: 80%;
+    }
+    
+    .cardetails:hover{
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+    
+    
+    
+    
+    #cartype2brief{
+      width: 100%;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-attachment: fixed;
+    }
+    #carbriefwhole2{
+      width: 80%;
+      height: 95%;
+      
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .cardetails2{
+      width: 30%;
+      height: 25%;
+      
+      box-shadow: 10px 10px 20px  black;
+      border-radius: 5px;
+    }
+    .commonfont35{
+      margin-top: 12%;
+      font-family: 'Coporate';
+      font-size: 2.1vw;
+      color: black;
+      text-align: center;
+    }
+    .commonfont36{
+      font-family: 'Lato';
+      font-size: 1.2vw;
+      text-align: center;
+      margin-top: 3%;
+    }
+    .cardetails2:hover{
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+    #cartype3brief{
+      width: 100%;
+      height: 25vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-attachment: fixed;
+     
+    }
+    .cardetails3{
+      width: 28%;
+      height: 76%;
+      
+      box-shadow: 10px 10px 20px  black;
+      border-radius: 5px;
+    }
+    .cardetails3:hover{
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+    #cartype4brief{
+      width: 100%;
+      height: 28vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+     
+    }
+    #carbriefwhole3{
+      width: 55%;
+      height: 70%;
+      display: flex;
+      justify-content: space-between;
+      
+     
+    }
+    .cardetails4{
+      width: 42%;
+      height: 90%;
+      
+      box-shadow: 10px 10px 20px  black;
+      border-radius: 5px;
+    }
+    .cardetails4:hover{
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+    
+    
+    
+    
+    .vehicle1-details1{
+      width:100%;
+      height: 60vh;
+      background-image: url(/images/vehiclesdetails/vehicle-1/vehicle1-eqs-1.jpg);
+      background-size: 100% 100%;
+    }
+    .vehicle-learnmore{
+      margin-top: 7%;
+      margin-left: 10%;
+      width: 15%;
+      height: 7%;
+      background-color: rgb(85, 85, 162);
+      color: white;
+      border: 1px solid rgb(85, 85, 162);
+      font-family: 'Lato';
+      font-size: 20px;
+    }
+    
+    .vehicle-learnmore:hover{
+      cursor: pointer;
+      transform: scale(1.1);
+      background-color: rgb(52, 52, 149);
+    }
+    
+    .vehicle1-text1{
+      font-family: 'Coporate';
+      font-size: 5.1vw;
+      color: white;
+      padding-top: 30%;
+      padding-left: 10%;
+    }
+    .vehicle1-text2{
+      font-family: 'Lato';
+      font-size: 1.1vw;
+      color: white;
+      padding-top: 1%;
+      padding-left: 10%;
+    }
+    .vehicle1-details2{
+      width: 100%;
+      height: 30vh;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+    }
+    .vehicle1box-1{
+      margin-top: 5%;
+      margin-left: 5%;
+      width: 90%;
+      height: 40%;
+     
+    display: flex;
+    }
+    .vehicle1box-2{
+      width:25%;
+      height: 100%;
+     
+    }
+    .vehicle1box-3{
+      
+      width:50%;
+      height: 100%;
+     
+      
+    }
+    .vehicle1-text3{
+      font-family: 'Lato';
+      font-size: 1.1vw;
+      color: white;
+    }
+    .vehicle1-text4{
+      padding-top: 3%;
+      font-family: 'Coporate';
+      font-size: 2.8vw;
+      color: white;
+    }
+    .vehicle1-text6{
+      padding-top: 5.5%;
+      font-family: 'Coporate';
+      font-size: 2.8vw;
+      color: white;
+    }
+    .vehicle1-text5{
+      padding-top:6%;
+      font-family: 'Lato';
+      font-size: 1.1vw;
+      color: white;
+    }
+    .vehicle1-text13{
+      padding-top:2.5%;
+      font-family: 'Lato';
+      font-size: 1.1vw;
+      color: white;
+    }
+    .vehicle1-text7{
+      padding-top:3%;
+      font-family: 'Lato';
+      font-size: 1.1vw;
+      color: white;
+    }
+    .vehicle1-text8{
+      margin-top: 1%;
+      margin-left: 5%;
+      margin-right: 5%;
+      font-family: 'Lato';
+      font-size: 1.3vw;
+      color: gray;
+    }
+    .vehicle1-details3{
+      width: 100%;
+      height: 60vh;
+    
+    }
+    .vehicle1-text9{
+      padding-top: 3%;
+      padding-left: 9%;
+      font-family: 'Coporate';
+      font-size: 5.1vw;
+      color: black;
+    }
+    .vehicle1-exteriordetails{
+      width: 100%;
+      height: 60vh;
+    }
+    .vehicle1-text10{
+      padding-top: 7%;
+      padding-left: 9%;
+      font-family: 'Lato';
+      font-size: 1.3vw;
+      color: gray;
+    }
+    .vehicle1-text11{
+      padding-left: 9%;
+      padding-top: 1.5%;
+      font-family: 'Coporate';
+      font-size: 3.8vw;
+      color: black;
+    }
+    .vehicle1-text12{
+      padding-top: 1.5%;
+      padding-left: 9%;
+      padding-right: 7%;
+      font-family: 'Lato';
+      font-size: 1.3vw;
+      color: gray;
+    }
+    .vehicle1-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-1/vehicle1-eqs2.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle1-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-1/vehicle1-eqs3.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle1-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-1/vehicle1-eqs4.jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    
+    
+    .vehicle2-details1{
+      width:100%;
+      height: 60vh;
+      background-image: url(/images/vehiclesdetails/vehicle-2/vehicle2-aclass1.jpg);
+      background-size: 100% 100%;
+    }
+    .vehicle2-text1{
+      font-family: 'Coporate';
+      font-size: 5.1vw;
+      color: white;
+      padding-top: 10%;
+      padding-left: 6%;
+    }
+    .vehicle2-text2{
+      font-family: 'Lato';
+      font-size: 1.7vw;
+      color: black;
+      padding-top: 1%;
+      padding-left: 6%;
+    }
+    
+    .vehicle2-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-2/vehicle2-aclass2.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle2-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-2/vehicle2-aclass3.jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle2-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-2/vehicle2-aclass4.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+
+
+
+
+
+    .vehicle3-details1{
+      width:100%;
+      height: 60vh;
+      background-image: url(/images/vehiclesdetails/vehicle-3/vehicle3-cclass1.jpg);
+      background-size: 100% 100%;
+    }
+    
+    .vehicle3-text2{
+      font-family: 'Lato';
+      font-size: 1.7vw;
+      color: white;
+      padding-top: 1%;
+      padding-left: 6%;
+    }
+    .vehicle3-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-3/vehicle3-cclass2.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle3-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-3/vehicle3-cclass3.jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle3-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-3/vehicle3-cclass4.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    
+    
+    .vehicle4-details1{
+      width:100%;
+      height: 60vh;
+      background-image: url(/images/vehiclesdetails/vehicle-4/vehicle4-eclass1.jpg);
+      background-size: 100% 100%;
+    }
+    
+    .vehicle4-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-4/vehicle4-eclass2.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle4-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-4/vehicle4-eclass3.jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle4-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-4/vehicle4-eclass4.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    
+    
+    .vehicle5-details1{
+      width:100%;
+      height: 60vh;
+      background-image: url(/images/vehiclesdetails/vehicle-5/vehicle5-sclass1.jpg);
+      background-size: 100% 100%;
+    }
+    
+    .vehicle5-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-5/vehicle5-sclass2.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle5-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-5/vehicle5-sclass3.jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle5-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-5/vehicle5-sclass4.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    
+    
+    .vehicle6-details1{
+      width:100%;
+      height: 60vh;
+      background-image: url(/images/vehiclesdetails/vehicle-6/vehicle6-maybach1.jpg);
+      background-size: 100% 100%;
+    }
+    
+    .vehicle6-text1{
+      font-family: 'Coporate';
+      font-size: 5.1vw;
+      color: black;
+      padding-top: 10%;
+      padding-left: 5%;
+    }
+    .vehicle6-text2{
+      font-family: 'Lato';
+      font-size: 1.3vw;
+      color: black;
+      padding-top: 1%;
+      padding-left: 5%;
+    }
+    
+    .vehicle6-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-6/vehicle6-maybach2.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle6-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-6/vehicle6-maybach3.jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle6-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-6/vehicle6-maybach4.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    
+    
+    
+    
+    .vehicle7-details1{
+      width:100%;
+      height: 60vh;
+      background-image: url(/images/vehiclesdetails/vehicle-7/vehicle7-eqb1.jpg);
+      background-size: 100% 100%;
+    }
+    
+    .vehicle7-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-7/vehicle7-eqb2.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle7-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-7/vehicle7-eqb3.jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle7-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-7/vehicle7-eqb3.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle8-details1{
+      width:100%;
+      height: 60vh;
+      background-image: url(/images/vehiclesdetails/vehicle-8/vehicle8-gla1.jpg);
+      background-size: 100% 100%;
+    }
+    
+    .vehicle8-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-8/vehicle8-gla2.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle8-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-8/vehicle8-gla3.jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle8-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-8/vehicle8-gla4.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    
+    
+    
+    .vehicle9-details1{
+      width:100%;
+      height: 60vh;
+      background-image: url(/images/vehiclesdetails/vehicle-9/vehicle9-glb1_1.jpg);
+      background-size: 100% 100%;
+    }
+    
+    .vehicle9-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-9/vehicle9-glb2_1.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle9-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-9/vehicle9-glb3.jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle9-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-9/vehicle9-glb4.jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    
+    
+    
+    
+    .vehicle10-details1{
+      width:100%;
+      height: 60vh;
+      background-image: url(/images/vehiclesdetails/vehicle-10/ezgif.com-gif-maker.jpg);
+      background-size: 100% 100%;
+    }
+    
+    .vehicle10-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-10/ezgif.com-gif-maker\ \(1\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle10-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-10/ezgif.com-gif-maker\ \(2\).jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle10-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-10/ezgif.com-gif-maker\ \(3\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    
+    
+    
+    .vehicle11-details1{
+      width:100%;
+      height: 60vh;
+      background-image: url(/images/vehiclesdetails/vehicle-11/ezgif.com-gif-maker.jpg);
+      background-size: 100% 100%;
+    }
+    
+    .vehicle11-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-11/ezgif.com-gif-maker\ \(1\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle11-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-11/ezgif.com-gif-maker\ \(2\).jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle11-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-11/ezgif.com-gif-maker\ \(3\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    
+    
+    
+    
+    .vehicle12-details1{
+      width:100%;
+      height: 60vh;
+      background-image: url(/images/vehiclesdetails/vehicle-12/ezgif.com-gif-maker.jpg);
+      background-size: 100% 100%;
+    }
+    
+    .vehicle12-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-12/ezgif.com-gif-maker\ \(2\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle12-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-12/ezgif.com-gif-maker\ \(3\).jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle12-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-12/ezgif.com-gif-maker\ \(4\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle12-text1{
+      font-family: 'Coporate';
+      font-size: 5.2vw;
+      color: white;
+      padding-top: 42%;
+      padding-left:62%;
+    }
+    .vehicle12-text2{
+      font-family: 'Lato';
+      font-size: 1.6vw;
+      color: white;
+      padding-top: 1%;
+      padding-left: 62%;
+    }
+    
+    
+    
+    
+    
+    .vehicle13-details1{
+      width:100%;
+      height: 60vh;
+      background-image: url(/images/vehiclesdetails/vehicle-13/ezgif.com-gif-maker.jpg);
+      background-size: 100% 100%;
+    }
+    
+    .vehicle13-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-13/ezgif.com-gif-maker\ \(1\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle13-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-13/ezgif.com-gif-maker\ \(2\).jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle13-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-13/ezgif.com-gif-maker\ \(3\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    
+    
+    
+    
+    .vehicle14-details1{
+      width:100%;
+      height: 60vh;
+      background-image: url(/images/vehiclesdetails/vehicle-14/ezgif.com-gif-maker.jpg);
+      background-size: 100% 90%;
+    }
+    
+    .vehicle14-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-14/ezgif.com-gif-maker\ \(1\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle14-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-14/ezgif.com-gif-maker\ \(2\).jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle14-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-14/ezgif.com-gif-maker\ \(3\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    
+    
+    
+    
+    .vehicle15-details1{
+      width:100%;
+      height: 60vh;
+      background-image: url(/images/vehiclesdetails/vehicle-15/ezgif.com-gif-maker.jpg);
+      background-size: 100% 90%;
+    }
+    
+    .vehicle15-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-15/ezgif.com-gif-maker\ \(1\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle15-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-15/ezgif.com-gif-maker\ \(2\).jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle15-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-15/ezgif.com-gif-maker\ \(3\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    
+    
+    
+    
+    .vehicle16-details1{
+      width:100%;
+      height: 60vh;
+      background-image: url(/images/vehiclesdetails/vehicle-16/ezgif.com-gif-maker.jpg);
+      background-size: 100% 90%;
+    }
+    
+    .vehicle16-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-16/ezgif.com-gif-maker\ \(1\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle16-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-16/ezgif.com-gif-maker\ \(2\).jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle16-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-16/ezgif.com-gif-maker\ \(3\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    
+    
+    
+    
+    .vehicle17-details1{
+      width:100%;
+      height: 60vh;
+      background-image: url(/images/vehiclesdetails/vehicle-17/ezgif.com-gif-maker.jpg);
+      background-size: 100% 90%;
+    }
+    
+    .vehicle17-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-17/ezgif.com-gif-maker\ \(1\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle17-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-17/ezgif.com-gif-maker\ \(2\).jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle17-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-17/ezgif.com-gif-maker\ \(3\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    
+    
+    
+    
+    
+    
+    .vehicle18-details1{
+      width:100%;
+      height: 60vh;
+      background-image: url(/images/vehiclesdetails/vehicle-18/ezgif.com-gif-maker.jpg);
+      background-size: 100% 90%;
+    }
+    
+    .vehicle18-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-18/ezgif.com-gif-maker\ \(1\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle18-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-18/ezgif.com-gif-maker\ \(2\).jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle18-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-18/ezgif.com-gif-maker\ \(3\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    
+    
+    
+    
+    .vehicle19-details1{
+      width:100%;
+      height: 60vh;
+      background-image: url(/images/vehiclesdetails/vehicle-19/ezgif.com-gif-maker.jpg);
+      background-size: 100% 90%;
+    }
+    
+    .vehicle19-exteriorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-19/ezgif.com-gif-maker\ \(1\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle19-interiorpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-19/ezgif.com-gif-maker\ \(2\).jpg);
+     background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle19-equipmentpic{
+      margin-top: 5%;
+      margin-left: 9%;
+      width: 83%;
+      height: 80%;
+      background-image: url(/images/vehiclesdetails/vehicle-19/ezgif.com-gif-maker\ \(3\).jpg);
+      background-size: 100% 90%;
+      background-repeat: no-repeat;
+    }
+    
+    .vehicle19-text1{
+      font-family: 'Coporate';
+      font-size: 5.1vw;
+      color: black;
+      padding-top: 30%;
+      padding-left: 5%;
+    }
+    .vehicle19-text2{
+      font-family: 'Lato';
+      font-size: 1.6vw;
+      color: black;
+      padding-top: 1%;
+      padding-left: 5%;
+    }
+
+
+
+}
